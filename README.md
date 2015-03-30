@@ -19,9 +19,8 @@ It should be fairly straightforward to come up with an app idea with about this 
 
 ### Remember
 
-1. Breathe.
-2. Please give us the best representation of your work. Ensure that your code is complete, tested, and clean.
-3. You have all the resources normally available to you except for a pair. Write your own code, but take advantage of coaches, your teachers, each other, and Google.
+1. Please give us the best representation of your work. Ensure that your code is complete, tested, and clean.
+2. You have all the resources normally available to you except for a pair. Write your own code, but take advantage of coaches, your teachers, each other, and Google.
 3. You should be able to talk about all the code in your app.
 4. You should be able to talk about the parts of your app that you wanted to write, but didn't get to.
 5. Use good git hygiene. Create branches when necessary, and make sure to merge everything back into `master` by the end of the day.
