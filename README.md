@@ -2,10 +2,10 @@
 The following challenge is designed for your to show the cummulaive skillsets you've developed durning your time in phase 2. The applications purpose, design, and implementation are open for your intereration. 
 
 ### Remember
-1. It's not neccessary for you to fulfill all of the requirments. This is your chance to show us what you know. 
-2. The requirments you do fulfill. Make them fully complete, tested, and clean. They should be the best representation of your work.
+1. It's not neccessary for you to fulfill all of the requirements. This is your chance to show us what you know. 
+2. The requirements you do fulfill. Make them fully complete, tested, and clean. They should be the best representation of your work.
 3. Be able to talk about the parts of the application that you've created. 
-4. Be able to talk about the requirments that you did not fulfill in order to show applied knowledge to your code reviewer.
+4. Be able to talk about the requirements that you did not fulfill in order to show applied knowledge to your code reviewer.
 5. Use good git hygiene, create branches when necessary, and rebase off your master branch.  
 
 ## You have Core Hours to complete the following
@@ -29,7 +29,7 @@ $ git push origin master
 That's it, you should be all setup to begin development.
 
 ### Release 1: The Challenge
-Create a basic CRUD application, using Sinatra. Then enhance your application using JavaScript to satisfy the following requirments.
+Create a basic CRUD application, using Sinatra. Then enhance your application using JavaScript to satisfy the following requirements.
 
 * 3 or More Models / resources
   * This includes the Users Model
