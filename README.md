@@ -12,7 +12,21 @@ The following challenge is designed for your to show the cummulaive skillsets yo
 
 ![alt 'new repo'](./references/new_repo.png)
 
+2. Clone the repository you've just created to your local machine.
+3. Clone the solo-challenge repository on your local machine.
+4. Use the following commands to move the skeleton into your repository:
 
+```
+$ mv solo-challenge/ your-app/
+$ cd your-app
+$ git remote remove origin
+$ git remote add origin https://github.com/nyc-sea-lions-2015/your-app
+$ git push origin master
+```
+
+5. Start Developing
+
+### Release 1: The Challenge
 
 
 
