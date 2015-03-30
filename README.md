@@ -27,7 +27,7 @@ It should be fairly straightforward to come up with an app idea with about this 
 5. Use good git hygiene. Create branches when necessary, and make sure to merge everything back into `master` by the end of the day.
 6. Breathe.
 
-You have from 9am to 6pm on 1 April, 2015 to complete your app. Good luck!
+You have from 9am to 6pm to complete your app. Good luck!
 
 ### Setup
 1. In the **cohorts organization** create a new repository with your app's name. It should be an empty repository. Do not initialize the repository with a README.
