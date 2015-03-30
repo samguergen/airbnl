@@ -24,7 +24,7 @@ $ git remote add origin https://github.com/nyc-sea-lions-2015/your-app
 $ git push origin master
 ```
 
-5. Start Developing
+That's it, you should be all setup to begin development.
 
 ### Release 1: The Challenge
 
