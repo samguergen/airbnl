@@ -1,42 +1,47 @@
-### Purpose
-The following challenge is designed for your to show the cummulaive skillsets you've developed durning your time in phase 2. The applications purpose, design, and implementation are open for your intereration. 
+### Purpose and Overview
+The following challenge is for you to demonstrate everything you've learned so far in phase 2.
+
+The challenge is this: create a Sinatra app of your own design.
+
+Your app should meet a minimum level of complexity and test coverage.
+
+In descending order of importance:
+
+1. You should have at least 3 tables and the corresponding migrations and ActiveRecord models
+ * Your model classes should have sensible ActiveRecord relations (`belongs_to`, etc).
+ * One of these tables must be a users table.
+2. Your app should support authentication.
+3. You should have specs for any custom model methods that you write.
+4. You may test controllers as you see fit.
+5. Implement AJAX with one `GET` request and one update (`POST`, `PUT`, or `DELETE`).
+
+It should be fairly straightforward to come up with an app idea with about this level of complexity. Ponder it, and discuss your idea with your cohort lead in conferences Monday or Tuesday.
 
 ### Remember
-1. It's not neccessary for you to fulfill all of the requirements. This is your chance to show us what you know. 
-2. The requirements you do fulfill. Make them fully complete, tested, and clean. They should be the best representation of your work.
-3. Be able to talk about the parts of the application that you've created. 
-4. Be able to talk about the requirements that you did not fulfill in order to show applied knowledge to your code reviewer.
-5. Use good git hygiene, create branches when necessary, and rebase off your master branch.  
 
-## You have Core Hours to complete the following
+1. Breathe.
+2. Please give us the best representation of your work. Ensure that your code is complete, tested, and clean.
+3. You have all the resources normally available to you except for a pair. Write your own code, but take advantage of coaches, your teachers, each other, and Google.
+3. You should be able to talk about all the code in your app.
+4. You should be able to talk about the parts of your app that you wanted to write, but didn't get to.
+5. Use good git hygiene. Create branches when necessary, and make sure to merge everything back into `master` by the end of the day.
+6. Breathe.
 
-### Release 0: Setting up the Challenge
-1. In the **cohorts organization** create a new repository with your applications name. This should be an empty repository.
+You have from 9am to 6pm on 1 April, 2015 to complete your app. Good luck!
+
+### Setup
+1. In the **cohorts organization** create a new repository with your app's name. It should be an empty repository. Do not initialize the repository with a README.
 
 ![alt 'new repo'](./references/new_repo.png)
 
-3. Clone the solo-challenge repository on your local machine.
-4. Use the following commands to move the skeleton into your repository:
+3. Use the following commands to clone the skeleton and push it into your repository:
 
 ```
+$ git clone https://github.com/nyc-sea-lions-2015/solo-challenge
 $ mv solo-challenge/ your-app/
 $ cd your-app
-$ git remote remove origin
-$ git remote add origin https://github.com/nyc-sea-lions-2015/your-app
+$ git remote set-url origin https://github.com/nyc-sea-lions-2015/your-app
 $ git push origin master
 ```
 
-That's it, you should be all setup to begin development.
-
-### Release 1: The Challenge
-Create a basic CRUD application, using Sinatra. Then enhance your application using JavaScript to satisfy the following requirements.
-
-* 3 or More Models / resources
-  * This includes the Users Model
-* Relate these models together using ActiveRecord
-* Implement User Authentication
-* Generate Tests for custom model logic that you see fit.
-* Generate Tests for controller logic and flow that you see fit.
-* Implement an AJAX Get request
-* Implement an AJAX Update request
-
+You should now be all setup to begin development. Check your repository on github and make sure everything is copascetic. If it's not, don't get snagged on this step! Get an instructor or coach to help you right away.
