@@ -8,7 +8,9 @@ The following challenge is designed for your to show the cummulaive skillsets yo
 4. Be able to talk about the requirments that you did not fulfill in order to show applied knowledge to your code reviewer.
 
 ### Release 0: Setting up the Challenge
-1. In the **cohorts organization** create a new repository with your applications name. This should be an empty repository. Refer to the image below
+1. In the **cohorts organization** create a new repository with your applications name. This should be an empty repository.
+
+![alt 'new repo'](./references/new_repo.png)
 
 
 
