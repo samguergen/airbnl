@@ -1,30 +1,16 @@
-> **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
-
 ### Purpose
-The Sinatra Skeleton:
+The following challenge is designed for your to show the cummulaive skillsets you've developed durning your time in phase 2. The applications purpose, design, and implementation are open for your intereration. 
 
-1. Provides a foundation for building challenges or creating a new Sinatra application.
-2. Demonstrates a reasonable set of practices around building Sinatra applications.
-3. Eases the transition to Rails for Dev Bootcamp students
+### Remember
+1. It's not neccessary for you to fulfill all of the requirments. This is your chance to show us what you know. 
+2. The requirments you do fulfill. Make them fully complete, tested, and clean. They should be the best representation of your work.
+3. Be able to talk about the parts of the application that you've created. 
+4. Be able to talk about the requirments that you did not fulfill in order to show applied knowledge to your code reviewer.
 
-### Quickstart
+### Release 0: Setting up the Challenge
+1. In the **cohorts organization** create a new repository with your applications name. This should be an empty repository. Refer to the image below
 
-1.  `bundle install`
-2.  `shotgun config.ru`
 
-As needed, create models & migrations with the `rake` tasks:
 
-```
-rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
-rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
-```
 
-### Contributing
 
-We would love for you to help make the skeleton more awesome, There are three ways to contribute:
-
-1. Ask for a bug fix or enhancement!
-2. Submit a pull request for a bug fix or enhancement!
-3. Code review an open pull request!
-
-Be prepared to give and receive specific, actionable, and kind feedback!
