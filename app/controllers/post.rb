@@ -4,7 +4,12 @@ get '/posts' do
 end
 
 get '/posts/new' do
-  erb :"post/new"
+  if session[:user_id]
+    erb :"post/new"
+  else
+    "Sorry, only AirBnL members can create new posts."
+  end
+
 end
 
 get '/posts/:id' do
@@ -14,7 +19,11 @@ end
 
 get '/posts/:id/edit' do
   @the_post = Post.find_by(id: params[:id])
-  erb :"post/edit"
+  if session[:user_id] == @the_post.user_id
+    erb :"post/edit"
+  else
+    "Sorry, you can only edit your own posts!"
+  end
 end
 
 put '/posts/:id' do
@@ -50,6 +59,10 @@ end
 
 delete '/posts/:id/delete' do
   @post_to_delete = Post.find_by(id: params[:id])
-  @post_to_delete.destroy!
-  redirect "/posts"
+  if @post_to_delete.user_id == session[:user_id]
+    @post_to_delete.destroy!
+    redirect "/posts"
+  else
+    "Sorry, you can only delete your own posts!"
+  end
 end
