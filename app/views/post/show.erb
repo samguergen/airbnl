@@ -6,6 +6,8 @@ Location: <%= @the_post.location %>
 <p><em>Available: <%= @the_post.start_date %> to <%= @the_post.end_date %> </em></p>
 <p>Price: $<%= @the_post.price %> per day.</p>
 
+<p><img src="<%=@the_post.photo_url%>"/></p>
+
 <p> <%= @the_post.description %> </p>
 by: <%= @the_post.user.first_name %> <%= @the_post.user.last_name %>
 
