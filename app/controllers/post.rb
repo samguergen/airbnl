@@ -14,11 +14,28 @@ end
 
 get '/posts/:id/edit' do
   @the_post = Post.find_by(id: params[:id])
-  erb :"/post/edit"
+  erb :"post/edit"
 end
 
 put '/posts/:id' do
   @the_post = Post.find_by(id: params[:id])
+  if @the_post
+    @the_post.title = params[:title]
+    @the_post.description = params[:description]
+    @the_post.location = params[:location]
+    @the_post.price = params[:price]
+    @the_post.start_date = params[:startdate]
+    @the_post.end_date = params[:enddate]
+    @the_post.photo_url = params[:photourl]
+
+    if @the_post.save!
+      redirect "/posts"
+    else
+      [500,"There is a problem with the information you are updating."]
+    end
+  else
+    [404, "This post couldn't be updated."]
+  end
 end
 
 post '/posts' do

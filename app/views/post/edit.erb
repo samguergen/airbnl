@@ -1,0 +1,24 @@
+<div class="container">
+<div class="header"></div>
+
+<h1> Edit your rental information </h1>
+
+
+
+<form action='/posts/<%=@the_post.id%>' method='post'>
+  <input type='hidden' name='_method' value='put'/>
+  <input type='text' name='title' value='<%=@the_post.title%>'/><br>
+  <input type='text' name='price' value='<%=@the_post.price%>'/><br>
+  <input type='text' name='location' value='<%=@the_post.location%>'/><br>
+  <input type='text' name='description' value='<%=@the_post.description%>'/><br>
+  <input type="text" name="startdate" value='<%=@the_post.start_date%>'/><br>
+  <input type="text" name="enddate" value='<%=@the_post.end_date%>'/><br>
+  <input type="text" name="photourl" value='<%=@the_post.photo_url%>'/><br>
+  <input type='submit' value='Update your post'/>
+</form>
+
+
+
+
+<div class="footer"></div>
+</div>
