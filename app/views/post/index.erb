@@ -1,0 +1,21 @@
+<div class="container">
+<div class="header"></div>
+
+<h1> All current rentals: </h1>
+
+<ol>
+<% @all_posts.each do |p| %>
+ <p><li>
+  <a href="/posts/<%=p.id%>"><%= p.title %>
+ </a></li>
+<em><%= p.location %></em>
+</p>
+ <% end %>
+</ol>
+
+
+
+
+
+<div class="footer"></div>
+</div>
