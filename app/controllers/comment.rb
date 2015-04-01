@@ -17,6 +17,17 @@ end
 
 put '/posts/:id/comments/:commentid' do
   @the_post = Post.find_by(id: params[:id])
+  @the_comment = Comment.find_by(id: params[:commentid], post_id: @the_post.id)
+  if @the_comment
+    @the_comment.description = params[:description]
+    if @the_comment.save!
+      redirect "/posts/#{@the_post.id}/comments"
+    else
+      [500, "There was a problem with your update"]
+    end
+  else
+    [404, "We couldn't update your comment"]
+  end
 end
 
 post '/posts/:id/comments' do
