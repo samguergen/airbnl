@@ -6,13 +6,21 @@ end
 
 get '/posts/:id/comments/new' do
   @the_post = Post.find_by(id: params[:id])
+  if session[:user_id]
     erb :"comment/new"
+  else
+    "Sorry, only AirbnL members can add comments"
+  end
 end
 
 get '/posts/:id/comments/:commentid/edit' do
   @the_post = Post.find_by(id: params[:id])
   @the_comment = Comment.find_by(id: params[:commentid], post_id: @the_post.id)
-  erb :"comment/edit"
+  if @the_comment.user_id == session[:user_id]
+    erb :"comment/edit"
+  else
+    "Sorry, you can only edit your own comments!"
+  end
 end
 
 put '/posts/:id/comments/:commentid' do
@@ -44,6 +52,9 @@ end
 delete '/posts/:id/comments/:commentid/delete' do
   @the_post = Post.find_by(id: params[:id])
   @the_comment = Comment.find_by(id: params[:commentid], post_id: @the_post.id)
-  @the_comment.destroy!
+  if @the_comment.user_id == session[:user_id]
+    @the_comment.destroy!
+  else
+    "Sorry, you can only delete your own comments!"
 
 end

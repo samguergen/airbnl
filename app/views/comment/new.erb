@@ -10,12 +10,20 @@
 <% end %>
 </div>
 
+<% if session[:user_id] %>
+
 <h2>Add your comment</h2>
 
 <form action='/posts/<%=@the_post.id%>/comments' method='post'>
   <input type='text' placeholder='description' name='description'/>
 <input type='submit' value='Add!'/>
 </form>
+
+<div class="sorry"> Sorry, only members can add comments. Please sign up at the link below:
+<p><a href="/signup">Sign up</a></p>
+</div>
+
+<% end %>
 
 <div class="footer"></div>
 </div>
