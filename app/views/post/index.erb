@@ -1,6 +1,17 @@
 <div class="container">
 <div class="header">
-<a href="/login">Login</a> | Sign up
+<% if session[:user_id] == nil %>
+<a href="/login">Login </a>
+| <a href="/signup">Sign up </a>
+<% elsif session[:user_id] %>
+| <a href="/logout">Logout </a>
+<% end %>
+</div>
+
+<div class="welcome">
+  <% if session[:user_id] %>
+Good to see you again, <%= User.find_by(id: session[:user_id]).first_name %>!
+<% end %>
 </div>
 
 <h1> All current rentals: </h1>
