@@ -23,14 +23,19 @@ Created by: <%= @the_post.user.first_name %> <%= @the_post.user.last_name %>
 <p> <%= @the_post.description %> </p>
 
 
+
+
 <p> Interested?
 <br>Comment below, or email <%= @the_post.user.first_name %> at: <em><%= @the_post.user.email %></em> </p>
 
+<% if session[:user_id] == @the_post.user_id %>
 <p><a href="/posts/<%=@the_post.id%>/edit">Edit my post</a></p>
 <form action="/posts/<%=@the_post.id%>/delete" method="post">
   <input type="hidden" name="_method" value="delete"/>
   <input type="submit" value="Delete my post"/>
 </form>
+
+<% end %>
 
 <%= erb :"comment/index" %>
 
