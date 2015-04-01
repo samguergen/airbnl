@@ -22,12 +22,14 @@ Created by: <%= @the_post.user.first_name %> <%= @the_post.user.last_name %>
 
 <p> <%= @the_post.description %> </p>
 
-<div class="votes">
+<form class="pvotes" action='/posts/<%=@the_post.id%>/upvote' method='post'>
+  <input type='submit' value='Like'>
+</form>
 
- Votes:
- <br> Likes:
- <br> Dislikes:
-</div>
+<form class="pvotes" action='/posts/<%=@the_post.id%>/downvote' method='post'>
+  <input type='submit' value='Dislike'>
+</form>
+<%= erb :"_postvote" %>
 
 
 <p> Interested?
