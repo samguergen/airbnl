@@ -5,4 +5,9 @@ jack = {:first_name => "Jack", :last_name => "LHeureux", :age => 27, :language =
 sammy = User.create!(sam)
 jacky= User.create!(jack)
 
-post1 =
+post1 = {:title => "My humble abode", :location => "avenue de Segur, Paris, France 75007", :start_date => 2015-04-08, :end_date => 2015-04-30, :price => 60, :description => "Very cozy appartment in a beautiful neighborhood. Breakfast provided!", :photo_url => "http://cdn.parisperfect.com/photos/apartments/large_1055055973-1270881789-minervois-paris-apartment-living%20room.jpg", :user_id => sammy.id}
+
+post2 = {:title => "My chill basement", :location => "Portland, Maine, USA", :start_date => 2015-05-01, :end_date => 2015-05-15, :price => 30, :description => "Cool basement, you have your own bathroom and we even allow pets", :photo_url => "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPPLSKrsH5jRAO2zilUzLKP6v1exKh97Fa4uslKQZa_RrICHH8", :user_id => jacky.id}
+
+post_1 = Post.create!(post1)
+post_2 = Post.create!(post2)
