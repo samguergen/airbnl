@@ -11,7 +11,7 @@
 <div class="mainbody">
 <h1><%= @the_post.title %> </h1>
 
-Created by: <%= @the_post.user.first_name %> <%= @the_post.user.last_name %>
+Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name %> <%= @the_post.user.last_name %></a>
 
 <p>Location: <%= @the_post.location %></p>
 

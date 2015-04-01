@@ -30,3 +30,8 @@ get '/logout' do
   redirect "/posts"
 end
 
+
+get '/user/:id' do
+  @the_user = User.find_by(id: params[:id])
+  erb :"user_show"
+end

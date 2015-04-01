@@ -1,0 +1,27 @@
+
+<div class="container">
+<div class="header">
+<% if session[:user_id] == nil %>
+<a href="/login">Login </a>
+| <a href="/signup">Sign up </a>
+<% elsif session[:user_id] %>
+| <a href="/logout">Logout </a>
+<% end %>
+</div>
+
+<div class="mainbody">
+<h1> User details: </h1>
+
+<center><img src="<%=@the_user.photo_url %>"/> </center>
+
+<p> First name: <%= @the_user.first_name %> </p>
+<p> Last name: <%= @the_user.last_name %> </p>
+<p> Age: <%= @the_user.age %> </p>
+<p> Description: <%= @the_user.description %> </p>
+<p> Languages: <%= @the_user.language %> </p>
+
+
+
+<div class="footer">
+This website is protected under the MIT license-  Samantha G. copyright 2015
+</div>
