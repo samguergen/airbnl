@@ -29,7 +29,7 @@ put '/posts/:id' do
     @the_post.photo_url = params[:photourl]
 
     if @the_post.save!
-      redirect "/posts"
+      redirect "/posts/#{@the_post.id}"
     else
       [500,"There is a problem with the information you are updating."]
     end

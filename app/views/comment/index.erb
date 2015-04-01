@@ -1,0 +1,22 @@
+
+<div class="container">
+<div class="header"></div>
+
+<h2>Comments</h2>
+
+  <% @the_post.comments.each do |c| %>
+  <p> <%= c.description %>
+  <br><em>Last updated: <%= c.updated_at %>
+  </em></p>
+
+
+<p><a href="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">Edit comment</a></p>
+<form action='/posts/<%=@the_post.id%>/comments/<%=c.id%>/delete' method='post'>
+  <input type='hidden' name='_method' value='delete'/>
+  <input type='submit' value='Delete'>
+</form>
+
+
+<% end %>
+<div class="footer"></div>
+</div>
