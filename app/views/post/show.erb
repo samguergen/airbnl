@@ -2,14 +2,19 @@
 <div class="header"></div>
 
 <h1><%= @the_post.title %> </h1>
-Location: <%= @the_post.location %>
+
+Created by: <%= @the_post.user.first_name %> <%= @the_post.user.last_name %>
+
+<p>Location: <%= @the_post.location %></p>
+
 <p><em>Available: <%= @the_post.start_date %> to <%= @the_post.end_date %> </em></p>
+
 <p>Price: $<%= @the_post.price %> per day.</p>
 
 <p><img src="<%=@the_post.photo_url%>"/></p>
 
 <p> <%= @the_post.description %> </p>
-by: <%= @the_post.user.first_name %> <%= @the_post.user.last_name %>
+
 
 <p> Interested?
 <br>Comment below, or email <%= @the_post.user.first_name %> at: <em><%= @the_post.user.email %></em> </p>
