@@ -1,3 +1,5 @@
+<% upvotestore = 0 %>
+<% downvotestore = 0 %>
 <% @the_post.postvotes.each do |p| %>
   <%if p.upvote && p.downvote%>
   <%upvotestore += p.upvote%>
@@ -7,6 +9,7 @@
 
 <div id="votes">
 <p><b>Votes:</b>
-<br><em> Upvotes: <%=upvotestore %> <<br> Downvotes: <%=downvotestore %>
+<br><em> Upvotes: <%=upvotestore %>
+<br> Downvotes: <%=downvotestore %>
 </em></p>
 </div>
