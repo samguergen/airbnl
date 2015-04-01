@@ -8,6 +8,8 @@
 <% end %>
 </div>
 
+<% if session[:user_id] %>
+
 <h1> Rent out your place! </h1>
 
 
@@ -23,7 +25,13 @@ Photo URL: <input type="text" name="photourl"/><br>
 <input type="submit" value="Add my post"/>
 </form>
 
+<% else %>
 
+<div class="sorry"> Sorry, only members can create new posts. Please sign up at the link below:
+<p><a href="/signup">Sign up</a></p>
+</div>
+
+<% end %>
 
 
 
