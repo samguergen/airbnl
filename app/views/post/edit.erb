@@ -8,6 +8,8 @@
 <% end %>
 </div>
 
+<% if session[:user_id] == @the_post.user_id %>
+
 <h1> Edit your rental information </h1>
 
 
@@ -24,7 +26,13 @@
   <input type='submit' value='Update your post'/>
 </form>
 
+<% else %>
 
+<div class="sorry"> Sorry, you can only edit your own posts!
+<p><a href="/posts">Return to list of posts</a></p>
+</div>
+
+<% end %>
 
 
 <div class="footer"></div>
