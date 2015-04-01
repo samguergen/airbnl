@@ -56,5 +56,5 @@ delete '/posts/:id/comments/:commentid/delete' do
     @the_comment.destroy!
   else
     "Sorry, you can only delete your own comments!"
-
+  end
 end
