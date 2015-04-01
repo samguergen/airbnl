@@ -22,8 +22,8 @@ put '/posts/:id' do
 end
 
 post '/posts' do
-  @new_post = Post.new()
-  if @new_post.save!
+  @new_post = Post.new(title: params[:title], location: params[:location], description: params[:description], price: params[:price], start_date: params[:startdate], end_date: params[:enddate], photo_url: params[:photourl])
+  if @new_post.save
     redirect "/posts/#{@new_post.id}"
   else
     [404, "This post couldn't be added."]
