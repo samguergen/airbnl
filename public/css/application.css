@@ -1,6 +1,6 @@
 .container {
   font-family: Architect;
-
+  border-color: blue;
 }
 
 .header {
@@ -11,6 +11,12 @@
   margin: 0px;
 }
 
+#logo {
+  display:block;
+  width: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 
 .mainbody{
