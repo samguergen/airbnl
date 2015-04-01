@@ -21,6 +21,12 @@ end
 
 post '/posts/:id/comments' do
   @the_post = Post.find_by(id: params[:id])
+  @new_comment = Comment.new(description: params[:description], post_id: @the_post.id)
+  if @new_comment.save!
+    redirect "/posts/#{@the_post.id}/comments"
+  else
+    [404, "Your comment couldn't be added."]
+  end
 end
 
 

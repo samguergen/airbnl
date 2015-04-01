@@ -1,1 +1,14 @@
-Hello
+
+
+<div class="container">
+<div class="header"></div>
+
+<h2>Add your comment</h2>
+
+<form action='/posts/<%=@the_post.id%>/comments' method='post'>
+  <input type='text' placeholder='description' name='description'/>
+<input type='submit' value='Add!'/>
+</form>
+
+<div class="footer"></div>
+</div>
