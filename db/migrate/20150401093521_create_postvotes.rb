@@ -5,6 +5,8 @@ class CreatePostvotes < ActiveRecord::Migration
       t.integer :downvote
       t.references :post
       t.references :user
+
+      t.timestamps
     end
   end
 end
