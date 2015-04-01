@@ -6,6 +6,7 @@
 
   <% @the_post.comments.each do |c| %>
   <p> <%= c.description %>
+  <br>By: <%= c.user.first_name %>
   <br><em>Last updated: <%= c.updated_at %>
   </em></p>
 
