@@ -8,6 +8,7 @@
 <% end %>
 </div>
 
+<div class="mainbody">
 <h1><%= @the_post.title %> </h1>
 
 Created by: <%= @the_post.user.first_name %> <%= @the_post.user.last_name %>
@@ -46,8 +47,9 @@ Created by: <%= @the_post.user.first_name %> <%= @the_post.user.last_name %>
 <% end %>
 
 <%= erb :"comment/index" %>
+</div>
 
 
-
-<div class="footer"></div>
+<div class="footer">
+This website is protected under the MIT license-  Samantha G. copyright 2015
 </div>
