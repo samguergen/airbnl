@@ -1,18 +1,11 @@
 
 
 <div class="container">
-<div class="header">
-<% if session[:user_id] == nil %>
-<a href="/login">Login </a>
-| <a href="/signup">Sign up </a>
-<% elsif session[:user_id] %>
-| <a href="/logout">Logout </a>
-<% end %>
-</div>
+
 
 <% if session[:user_id] %>
 
-<h2>Add your comment</h2>
+<b> Add your comment </b>
 
 <form id='commentform' action='/posts/<%=@the_post.id%>/comments' method='post'>
   <input type='text' placeholder='description' name='description'/>
@@ -26,5 +19,3 @@
 
 <% end %>
 
-<div class="footer"></div>
-</div>

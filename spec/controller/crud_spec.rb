@@ -20,7 +20,6 @@ describe 'posts controller' do
 
 
     it 'should process the delete route and make it redirect to the post index erb page' do
-      # delete '/delete_something', :params => with_a_param=true
       delete '/posts/:id/delete'
       expect(last_response).to be_redirect
       follow_redirect!
@@ -29,7 +28,6 @@ describe 'posts controller' do
     end
 
     it 'should process the edit route and make it redirect to the post show erb page' do
-      # delete '/delete_something', :params => with_a_param=true
       put '/posts/:id/edit'
       expect(last_response).to be_redirect
       follow_redirect!
