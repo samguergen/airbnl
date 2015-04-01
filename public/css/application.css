@@ -1,0 +1,33 @@
+.container {
+
+}
+
+.header {
+  display: absolute;
+  padding: 20px;
+  width: 100%;
+  background-color: #CCFFFF;
+  margin: 0px;
+}
+
+
+
+.mainbody{
+  float: left;
+  background-color: #ECFFFF;
+  width: 100%;
+  height: 70%;
+  padding: 40px;
+}
+
+.mainbody h1, h2{
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #CCFFFF;
+  clear: both;
+  padding: 10px;
+}
+
