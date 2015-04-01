@@ -11,3 +11,10 @@ post2 = {:title => "My chill basement", :location => "Portland, Maine, USA", :st
 
 post_1 = Post.create!(post1)
 post_2 = Post.create!(post2)
+
+comment1 = {:description => "Wah! Very nice. I am interested!", :post_id => post_1.id , :user_id => jacky.id}
+
+comment2 = {:description => "I like it.", :post_id => post_2.id , :user_id => sammy.id}
+
+comment_1 = Comment.create!(comment1)
+comment_2 = Comment.create!(comment2)
