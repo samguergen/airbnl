@@ -26,16 +26,14 @@ get '/posts/:id/edit' do
   end
 end
 
+
 put '/posts/:id' do
   @the_post = Post.find_by(id: params[:id])
   if @the_post
-    @the_post.title = params[:title]
-    @the_post.description = params[:description]
-    @the_post.location = params[:location]
-    @the_post.price = params[:price]
-    @the_post.start_date = params[:startdate]
-    @the_post.end_date = params[:enddate]
-    @the_post.photo_url = params[:photourl]
+    # When you see things like this, you might want to think "let's extract
+    # this work to a method...e.g.
+    #
+    @the_post.update_from_params(params)
 
     if @the_post.save!
       redirect "/posts/#{@the_post.id}"

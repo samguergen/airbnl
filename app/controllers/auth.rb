@@ -6,6 +6,7 @@ post '/login' do
   user = User.find_by(email: params[:user][:email])
   if user.try(:authenticate, params[:user][:password])
     session[:user_id] = user.id
+    redirect "/posts"
   else
     redirect "/login"
   end
@@ -26,7 +27,7 @@ post '/signup' do
 end
 
 get '/logout' do
-  session[:user_id] = nil
+  session[:user_id] = nil # FYI: you can also do session.clear (which empties everything!)
   redirect "/posts"
 end
 

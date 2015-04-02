@@ -39,8 +39,14 @@ put '/posts/:id/comments/:commentid' do
 end
 
 post '/posts/:id/comments' do
+  # Style points!
+  #
+  # You can use ActiveRecord to make nested creation soooooo easy!
+  # Post.find_by(id: params[:id]).comments.build(description: params[:description])
+  # http://guides.rubyonrails.org/association_basics.html#has-many-association-reference
+
   @the_post = Post.find_by(id: params[:id])
-  @new_comment = Comment.new(description: params[:description], post_id: @the_post.id)
+  @new_comment = @the_post.comments.build(description: params[:description])
   if @new_comment.save!
     redirect "/posts/#{@the_post.id}/comments"
   else
