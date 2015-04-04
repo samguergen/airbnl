@@ -29,7 +29,7 @@ put '/posts/:id/comments/:commentid' do
   if @the_comment
     @the_comment.description = params[:description]
     if @the_comment.save!
-      redirect "/posts/#{@the_post.id}/comments"
+      redirect "/posts/#{@the_post.id}"
     else
       [500, "There was a problem with your update"]
     end
