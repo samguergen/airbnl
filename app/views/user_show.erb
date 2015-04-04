@@ -20,7 +20,9 @@
 <p> Description: <%= @the_user.description %> </p>
 <p> Languages: <%= @the_user.language %> </p>
 
-
+<% @the_user.posts.each do |p| %>
+<p><a href="/posts/<%=p.id %>">View his post <%=p.id %> </a></p>
+<% end %>
 
 <div class="footer">
 This website is protected under the MIT license-  Samantha G. copyright 2015

@@ -40,9 +40,9 @@ end
 
 post '/posts/:id/comments' do
   @the_post = Post.find_by(id: params[:id])
-  @new_comment = Comment.new(description: params[:description], post_id: @the_post.id)
+  @new_comment = Comment.new(description: params[:description], post_id: @the_post.id, user_id: session[:user_id])
   if @new_comment.save!
-    redirect "/posts/#{@the_post.id}/comments"
+    redirect "/posts/#{@the_post.id}"
   else
     [404, "Your comment couldn't be added."]
   end
@@ -57,4 +57,5 @@ delete '/posts/:id/comments/:commentid/delete' do
   else
     "Sorry, you can only delete your own comments!"
   end
+  redirect "/posts/#{@the_post.id}"
 end
