@@ -19,13 +19,15 @@
 </head>
 <body>
 
-  <div class="header">
+<div class="header">
+  <div class="links">
 <% if session[:user_id] == nil %>
 <a href="/login">Login </a>
-| <a href="/signup">Sign up </a>
+ <a href="/signup">Sign up </a>
 <% elsif session[:user_id] %>
-| <a href="/logout">Logout </a>
+ <a href="/logout">Logout </a>
 <% end %>
+</div>
 </div>
 
   <%= yield %>

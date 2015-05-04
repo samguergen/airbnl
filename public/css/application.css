@@ -9,6 +9,32 @@
   width: 100%;
   background-color: #CCFFFF;
   margin: 0px;
+  text-align: right;
+
+}
+
+.header .links{
+  padding-right: 10%;
+}
+
+.header a{
+    color: black;
+    font-weight: bold;
+    margin: 5%;
+}
+
+.header a:link{
+    text-decoration: none;
+}
+
+.header a:hover{
+  font-size: large;
+/*  color: #ECFFFF;*/
+
+}
+
+.header a:visited{
+    text-decoration: none;
 }
 
 #logo {
