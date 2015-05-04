@@ -5,22 +5,31 @@
 
 .header {
   display: absolute;
-  padding: 20px;
+  padding-top: 3%;
+  padding-bottom: 5%;
   width: 100%;
   background-color: #CCFFFF;
   margin: 0px;
-  text-align: right;
 
 }
 
+.header #logo{
+  float: left;
+  width: 5%;
+  background-color: #CCFFFF;
+  vertical-align: middle;
+}
+
 .header .links{
-  padding-right: 10%;
+  padding-left: 80%;
+  padding-bottom: 20px;
+  float: left;
+  background-color: #CCFFFF;
 }
 
 .header a{
     color: black;
     font-weight: bold;
-    margin: 5%;
 }
 
 .header a:link{
@@ -29,20 +38,12 @@
 
 .header a:hover{
   font-size: large;
-/*  color: #ECFFFF;*/
-
 }
 
 .header a:visited{
     text-decoration: none;
 }
 
-#logo {
-  display:block;
-  width: 60px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 
 .mainbody{
@@ -67,7 +68,7 @@
 #comments_section {
   background-color: #FFFFCC;
   width: 90%;
-  border-radius: 30px
+  border-radius: 30px;
   text-align: center;
   padding: 10px;
 }
