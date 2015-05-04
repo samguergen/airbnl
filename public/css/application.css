@@ -18,18 +18,20 @@
   width: 5%;
   background-color: #CCFFFF;
   vertical-align: middle;
+  padding-left: 5%;
 }
 
 .header .links{
-  padding-left: 80%;
+  padding-left: 75%;
   padding-bottom: 20px;
   float: left;
   background-color: #CCFFFF;
 }
 
-.header a{
+.header .links a{
     color: black;
     font-weight: bold;
+    padding-right: 20px;
 }
 
 .header a:link{
