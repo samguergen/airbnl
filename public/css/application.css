@@ -102,6 +102,10 @@ html, body { height: 100%; }
   text-align: center;
 }
 
+#login_form, #signup_form{
+  padding-left: 20px;
+}
+
 
 .footer {
   background-color: black;
