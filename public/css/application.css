@@ -9,31 +9,36 @@ html, body { height: 100%; }
 
 .header {
   display: absolute;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 5%;
   width: 100%;
-  background-color: #CCFFFF;
+/*  background-color: #CCFFFF;*/
+  background-color: black;
   margin: 0px;
-
 }
 
 .header #logo{
   float: left;
   width: 5%;
-  background-color: #CCFFFF;
   vertical-align: middle;
   padding-left: 5%;
+}
+
+.header #bizname{
+  color: white;
+  margin-left: 10%;
+  font-size: 20px;
+  font-style: italic;
 }
 
 .header .links{
   padding-left: 75%;
   padding-bottom: 20px;
   float: left;
-  background-color: #CCFFFF;
 }
 
 .header .links a{
-    color: black;
+    color: white;
     font-weight: bold;
     padding-right: 20px;
 }
@@ -93,7 +98,10 @@ html, body { height: 100%; }
 
 
 .footer {
-  background-color: #CCFFFF;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  font-style: italic;
   clear: both;
   padding: 10px;
 }
