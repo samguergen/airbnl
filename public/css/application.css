@@ -95,9 +95,12 @@ html, body { height: 100%; }
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-decoration: none;
     line-height: 300%;
-    list-style-type: none;
 }
 
+.mainbody #rental-list ul
+{
+    list-style-type: none;
+}
 
 .mainbody h1, h2{
   text-align: center;
