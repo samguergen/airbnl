@@ -61,6 +61,10 @@
   padding: 40px;
 }
 
+.mainbody #rental-list ol, .mainbody #rental-list a:visited, .mainbody #rental-list a:link{
+  color: white;
+  text-decoration: none;
+}
 
 .mainbody h1, h2{
   text-align: center;
