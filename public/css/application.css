@@ -70,7 +70,7 @@ html, body { height: 100%; }
   -moz-opacity:.80;
   filter:alpha(opacity=80);
   width: 100%;
-  height: 70%;
+  height: 90%;
   padding: 40px;
   padding-bottom:15px;
 }
@@ -83,6 +83,7 @@ html, body { height: 100%; }
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: rgb(228, 214, 214);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center
 }
 
 .mainbody #rental-list ul, .mainbody #rental-list ul a:visited, .mainbody #rental-list ul a:link{
@@ -104,9 +105,9 @@ html, body { height: 100%; }
     line-height: 300%;
 }
 
-.mainbody h1, h2{
+/*.mainbody h1, h2{
   text-align: center;
-}
+}*/
 
 #login_form, #signup_form{
   padding-left: 40px;
