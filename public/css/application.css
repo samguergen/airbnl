@@ -1,47 +1,147 @@
+
+html, body { height: 100%; }
+
 .container {
   font-family: Architect;
   border-color: blue;
+  height: 80%;
 }
 
 .header {
   display: absolute;
-  padding: 20px;
+  padding-top: 1%;
+  padding-bottom: 5%;
   width: 100%;
-  background-color: #CCFFFF;
+/*  background-color: #CCFFFF;*/
+  background-color: black;
   margin: 0px;
 }
 
-#logo {
-  display:block;
-  width: 60px;
-  margin-right: auto;
-  margin-left: auto;
+.header #logo{
+  float: left;
+  width: 5%;
+  vertical-align: middle;
+  padding-left: 5%;
 }
+
+.header #bizname{
+  color: rgb(0, 168, 255);
+  margin-left: 10%;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.header .links{
+  padding-left: 65%;
+  padding-bottom: 20px;
+  float: left;
+}
+
+.header .links a{
+    color: white;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.header a:link{
+    text-decoration: none;
+}
+
+.header a:hover{
+  color: rgb(0, 168, 255);
+}
+
+.header a:visited{
+    text-decoration: none;
+}
+
 
 
 .mainbody{
   float: left;
-  background-color: #ECFFFF;
+/*  background-color: #ECFFFF;*/
+  background: url("../mewe-co.jpg") no-repeat 100% 100% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  opacity:.80;
+  -moz-opacity:.80;
+  filter:alpha(opacity=80);
+  width: 100%;
+  height: 90%;
+  padding: 40px;
+  padding-bottom:15px;
+}
+/*source of image: http://mewe.co/wp-content/uploads/2015/04/new-nice-apartment-kitchens-with-and-kitchens-designed-for-entertaining-complement-nice-apartment.jpg*/
+
+
+
+.mainbody #rental-list h1{
+  font-size: 300%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: rgb(228, 214, 214);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center
+}
+
+.mainbody #rental-list ul, .mainbody #rental-list ul a:visited, .mainbody #rental-list ul a:link{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
+}
+
+.mainbody #rental-list ul{
+  padding-left: 25%;
+  list-style-type: none;
+}
+
+
+.mainbody #rental-list ul li a:visited, .mainbody #rental-list ul li a:link{
+  color: rgb(228, 214, 214);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-decoration: none;
+    line-height: 300%;
+}
+
+/*.mainbody h1, h2{
+  text-align: center;
+}*/
+
+#login_form, #signup_form{
+  padding-left: 40px;
+  line-height: 150%;
+    background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   width: 100%;
   height: 70%;
   padding: 40px;
-}
-
-.mainbody h1, h2{
-  text-align: center;
+  padding-bottom:15px;
 }
 
 
 .footer {
-  background-color: #CCFFFF;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  font-style: italic;
   clear: both;
-  padding: 10px;
+  padding: 20px;
+  height: 15px;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 
 #comments_section {
   background-color: #FFFFCC;
   width: 90%;
-  border-radius: 30px
+  border-radius: 30px;
   text-align: center;
   padding: 10px;
 }

@@ -1,12 +1,4 @@
 <div class="container">
-<div class="header">
-<% if session[:user_id] == nil %>
-<a href="/login">Login </a>
-| <a href="/signup">Sign up </a>
-<% elsif session[:user_id] %>
-| <a href="/logout">Logout </a>
-<% end %>
-</div>
 
 <div class="mainbody">
 <h1><%= @the_post.title %> </h1>
@@ -51,7 +43,4 @@ Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name
 
 <p><a href="/posts"> Return to posts </a></p>
 
-
-<div class="footer">
-This website is protected under the MIT license-  Samantha G. copyright 2015
 </div>
