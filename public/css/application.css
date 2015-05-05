@@ -66,12 +66,16 @@ html, body { height: 100%; }
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+  opacity:.80;
+  -moz-opacity:.80;
+  filter:alpha(opacity=80);
   width: 100%;
-  height: 90%;
+  height: 70%;
   padding: 40px;
   padding-bottom:15px;
 }
 /*source of image: http://mewe.co/wp-content/uploads/2015/04/new-nice-apartment-kitchens-with-and-kitchens-designed-for-entertaining-complement-nice-apartment.jpg*/
+
 
 
 .mainbody #rental-list h1{
@@ -107,6 +111,18 @@ html, body { height: 100%; }
 #login_form, #signup_form{
   padding-left: 40px;
   line-height: 150%;
+    background: url("../mewe-co.jpg") no-repeat 100% 100% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  opacity:.30;
+  -moz-opacity:.30;
+  filter:alpha(opacity=30);
+  width: 100%;
+  height: 70%;
+  padding: 40px;
+  padding-bottom:15px;
 }
 
 
