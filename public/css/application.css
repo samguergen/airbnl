@@ -97,12 +97,14 @@ html, body { height: 100%; }
   list-style-type: none;
 }
 
+.mainbody #rental-list ul a:hover{
+  color: blue;
+  font-size: 30px
+}
 
-.mainbody #rental-list ul li a:visited, .mainbody #rental-list ul li a:link{
-  color: rgb(228, 214, 214);
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  text-decoration: none;
-    line-height: 300%;
+.mainbody #rental-list ul hr{
+  width: 40%;
+  margin-right: 720px;
 }
 
 /*.mainbody h1, h2{
