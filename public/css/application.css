@@ -61,8 +61,25 @@
   padding: 40px;
 }
 
-.mainbody #rental-list ol, .mainbody #rental-list a:visited, .mainbody #rental-list a:link{
+.mainbody #rental-list h1{
+  font-size: 300%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: rgb(228, 214, 214);
+}
+
+.mainbody #rental-list ol, .mainbody #rental-list ol a:visited, .mainbody #rental-list ol a:link{
   color: white;
+  text-decoration: none;
+}
+
+.mainbody #rental-list ol{
+  padding-left: 25%
+}
+
+
+.mainbody #rental-list a:visited, .mainbody #rental-list a:link{
+  color: rgb(228, 214, 214);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-decoration: none;
 }
 
