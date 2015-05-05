@@ -71,6 +71,8 @@ html, body { height: 100%; }
   padding: 40px;
   padding-bottom:15px;
 }
+/*source of image: http://mewe.co/wp-content/uploads/2015/04/new-nice-apartment-kitchens-with-and-kitchens-designed-for-entertaining-complement-nice-apartment.jpg*/
+
 
 .mainbody #rental-list h1{
   font-size: 300%;
@@ -103,7 +105,7 @@ html, body { height: 100%; }
 }
 
 #login_form, #signup_form{
-  padding-left: 20px;
+  padding-left: 40px;
   line-height: 150%;
 }
 
