@@ -87,6 +87,7 @@ html, body { height: 100%; }
 
 .mainbody #rental-list ul{
   padding-left: 25%;
+  list-style-type: none;
 }
 
 
@@ -95,11 +96,6 @@ html, body { height: 100%; }
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-decoration: none;
     line-height: 300%;
-}
-
-.mainbody #rental-list ul
-{
-    list-style-type: none;
 }
 
 .mainbody h1, h2{
