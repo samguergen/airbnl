@@ -1,6 +1,8 @@
 <div class="container">
 
 <div class="mainbodyshow">
+<p><a href="/posts"> Return to posts </a></p>
+
 <h1><%= @the_post.title %> </h1>
 
 <p><img src="<%=@the_post.photo_url%>"/></p>
@@ -45,6 +47,6 @@ Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name
 <%= erb :"comment/index" %>
 </div>
 
-<p><a href="/posts"> Return to posts </a></p>
+
 </div>
 </div>

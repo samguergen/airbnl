@@ -140,13 +140,14 @@ html, body { height: 100%; }
   font-size: 15px;
   margin-left: 40px;
   float:left;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .mainbodyshow #propmoreinfo{
   clear: both;
-  border: 1px solid;
-  padding: 10px;
-  border-radius: 3px;
+
 }
 
 /*.mainbodyshow h1 {
@@ -186,9 +187,14 @@ html, body { height: 100%; }
 }
 
 #comments_section {
-  background-color: #FFFFCC;
-  width: 90%;
-  border-radius: 30px;
-  text-align: center;
+  background-color: #C3C3C3;
+  text-align: left;
   padding: 10px;
+  margin-left: 20px;
+  width: 40%;
+}
+
+#comments_section .comment_author_detail {
+  font-style: italic;
+  font-size: 12px;
 }

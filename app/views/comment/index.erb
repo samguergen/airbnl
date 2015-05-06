@@ -7,9 +7,10 @@
 
   <% @the_post.comments.each do |c| %>
   <p> <%= c.description %>
-  <p><em>By: <%= c.user.first_name %>
-  <br>Last updated: <%= c.updated_at %>
-  </em></p>
+  <div class="comment_author_detail">
+  By: <%= c.user.first_name %> | Last updated: <%= c.updated_at %>
+  </div>
+  </p>
 
 <% if session[:user_id] == c.user_id %>
 <p><a href="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">Edit my comment</a></p>
