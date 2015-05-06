@@ -201,7 +201,7 @@ html, body { height: 100%; }
 
 
 .mainbody_usershow{
-  background-color: rgb(223, 223, 223);
+  background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
