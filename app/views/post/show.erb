@@ -1,8 +1,13 @@
 <div class="container">
 
-<div class="mainbody">
+<div class="mainbodyshow">
+<p><a href="/posts"> Return to posts </a></p>
+
 <h1><%= @the_post.title %> </h1>
 
+<p><img src="<%=@the_post.photo_url%>"/></p>
+
+<div id="basicpropinfo">
 Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name %> <%= @the_post.user.last_name %></a>
 
 <p>Location: <%= @the_post.location %></p>
@@ -10,8 +15,9 @@ Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name
 <p><em>Available: <%= @the_post.start_date %> to <%= @the_post.end_date %> </em></p>
 
 <p>Price: $<%= @the_post.price %> per day.</p>
+</div>
 
-<p><img src="<%=@the_post.photo_url%>"/></p>
+<div id="propmoreinfo">
 
 <p> <%= @the_post.description %> </p>
 
@@ -41,6 +47,6 @@ Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name
 <%= erb :"comment/index" %>
 </div>
 
-<p><a href="/posts"> Return to posts </a></p>
 
+</div>
 </div>
