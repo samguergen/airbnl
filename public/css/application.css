@@ -132,6 +132,7 @@ html, body { height: 100%; }
   border-radius:10px;
 /*  display: inline-block;*/
   float:left;
+  padding-bottom: 30px;
 }
 
 .mainbodyshow #basicpropinfo{
@@ -143,7 +144,17 @@ html, body { height: 100%; }
 
 .mainbodyshow #propmoreinfo{
   clear: both;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 3px;
 }
+
+/*.mainbodyshow h1 {
+  border: 1px solid black;
+  margin-right: 800px;
+  padding: 10px;
+  border-radius: 5px;
+}*/
 
 #login_form, #signup_form{
   padding-left: 40px;
