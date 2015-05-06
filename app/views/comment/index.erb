@@ -3,13 +3,14 @@
 
 
 <div id="comments_section">
-<h2>Comments</h2>
+<h2>Comments</h2> <a id="commentlink" href="/posts/<%=@the_post.id%>/comments/new">Add a comment</a>
 
   <% @the_post.comments.each do |c| %>
   <p> <%= c.description %>
   <div class="comment_author_detail">
   By: <%= c.user.first_name %> | Last updated: <%= c.updated_at %>
   </div>
+    ______________________
   </p>
 
 <% if session[:user_id] == c.user_id %>
@@ -21,6 +22,6 @@
 <% end %>
 <% end %>
 </div>
-<p> </p>
 
-<p><a id="commentlink" href="/posts/<%=@the_post.id%>/comments/new">Add a comment</a></p>
+
+
