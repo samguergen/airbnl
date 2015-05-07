@@ -4,7 +4,10 @@
 
 <div id="comments_section">
 <h2>Comments</h2>
-<a id="commentlink" href="/posts/<%=@the_post.id%>/comments/new">Add a comment</a>
+<!-- <form id="commentlink" action="/posts/<%=@the_post.id%>/comments/new">
+    <input type="submit" value="Add a comment">
+</form> -->
+ <a id="commentlink" href="/posts/<%=@the_post.id%>/comments/new">Add a comment</a>
 
   <% @the_post.comments.each do |c| %>
   <p> <%= c.description %>
@@ -15,7 +18,10 @@
   </p>
 
 <% if session[:user_id] == c.user_id %>
-<p><a href="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">Edit my comment</a></p>
+<form action="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">
+    <input type="submit" value="Edit comment">
+</form>
+<!-- <p><a href="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">Edit my comment</a></p> -->
 <form action='/posts/<%=@the_post.id%>/comments/<%=c.id%>/delete' method='post'>
   <input type='hidden' name='_method' value='delete'/>
   <input type='submit' value='Delete my comment'>
