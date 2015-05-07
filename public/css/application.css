@@ -165,7 +165,7 @@ html, body { height: 100%; }
 #login_form, #signup_form{
   padding-left: 40px;
   line-height: 150%;
-    background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
+  background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -206,7 +206,7 @@ html, body { height: 100%; }
 
 
 .mainbody_usershow{
-  background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
+  background: url("../white-room.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -227,3 +227,24 @@ html, body { height: 100%; }
   margin: 50px;
 }
 
+#new_post {
+  line-height: 30px;
+  margin: 0px;
+  padding-left: 60px;
+  background: url("../white-room.jpg") no-repeat 100% 100% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  height: 75%;
+  padding-bottom:15px;
+}
+
+
+#new_post h1{
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+}
+
+/*http://www.vectormu.com/nnh-content/uploads/nice/nice-outstanding-apartment-interior-kitchen-with-living-room.jpg*/
