@@ -3,14 +3,13 @@
 
 
 <div id="comments_section">
-<h2>Comments</h2>
 <!-- <form id="commentlink" action="/posts/<%=@the_post.id%>/comments/new">
     <input type="submit" value="Add a comment">
 </form> -->
  <a id="commentlink" href="/posts/<%=@the_post.id%>/comments/new">Add a comment</a>
 
   <% @the_post.comments.each do |c| %>
-  <p> <%= c.description %>
+  <p> "<%= c.description %>"
   <div class="comment_author_detail">
   By: <%= c.user.first_name %> | Last updated: <%= c.updated_at %>
   </div>
