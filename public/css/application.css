@@ -87,7 +87,7 @@ html, body { height: 100%; }
   font-size: 300%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: rgb(228, 214, 214);
-  text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
   text-align: center
 }
 
