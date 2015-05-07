@@ -7,7 +7,7 @@ end
 get '/posts/:id/comments/new' do
   @the_post = Post.find_by(id: params[:id])
   if session[:user_id]
-    erb :"comment/new"
+    erb :"comment/new", layout: false
   else
     "Sorry, only AirbnL members can add comments"
   end
