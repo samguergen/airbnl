@@ -3,7 +3,8 @@
 
 
 <div id="comments_section">
-<h2>Comments</h2> <a id="commentlink" href="/posts/<%=@the_post.id%>/comments/new">Add a comment</a>
+<h2>Comments</h2>
+<a id="commentlink" href="/posts/<%=@the_post.id%>/comments/new">Add a comment</a>
 
   <% @the_post.comments.each do |c| %>
   <p> <%= c.description %>
