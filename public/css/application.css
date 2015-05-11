@@ -44,16 +44,12 @@ html, body { height: 100%; }
     padding-right: 20px;
 }
 
-.header a:link{
+a:link, a:visited{
     text-decoration: none;
 }
 
 .header a:hover{
   color: rgb(0, 168, 255);
-}
-
-.header a:visited{
-    text-decoration: none;
 }
 
 
@@ -77,12 +73,17 @@ html, body { height: 100%; }
 /*source of image: http://mewe.co/wp-content/uploads/2015/04/new-nice-apartment-kitchens-with-and-kitchens-designed-for-entertaining-complement-nice-apartment.jpg*/
 
 
+.mainbodyindex .welcome{
+  color: white;
+  text-shadow: -1px 0 black, 0 4px black, 4px 0 black, 0 -1px black;
+  font-size: 20px;
+}
 
 .mainbodyindex #rental-list h1{
   font-size: 300%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: rgb(228, 214, 214);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
   text-align: center
 }
 
@@ -100,7 +101,7 @@ html, body { height: 100%; }
 }
 
 .mainbodyindex #rental-list ul a:hover{
-  color: blue;
+  color: rgb(0, 168, 255);
   font-size: 20px
 }
 
@@ -114,14 +115,14 @@ html, body { height: 100%; }
 }*/
 
 .mainbodyshow {
-  background-color: rgb(223, 223, 223);
+  background: url("../white-room.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  opacity:.80;
+/*  opacity:.80;
   -moz-opacity:.80;
-  filter:alpha(opacity=80);
+  filter:alpha(opacity=80);*/
 /*  width: 100%;
   height: 90%;*/
   padding: 40px;
@@ -160,7 +161,7 @@ html, body { height: 100%; }
 #login_form, #signup_form{
   padding-left: 40px;
   line-height: 150%;
-    background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
+  background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -187,11 +188,12 @@ html, body { height: 100%; }
 }
 
 #comments_section {
-  background-color: #C3C3C3;
+  background-color: #F1FAEF;
   text-align: left;
   padding: 10px;
   margin-left: 20px;
   width: 40%;
+  border-radius: 5px;
 }
 
 #comments_section .comment_author_detail {
@@ -199,9 +201,12 @@ html, body { height: 100%; }
   font-size: 12px;
 }
 
+#comments_section #commentlink{
+  padding-left: 70%;
+}
 
 .mainbody_usershow{
-  background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
+  background: url("../white-room.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -222,3 +227,24 @@ html, body { height: 100%; }
   margin: 50px;
 }
 
+#new_post {
+  line-height: 30px;
+  margin: 0px;
+  padding-left: 60px;
+  background: url("../white-room.jpg") no-repeat 100% 100% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  height: 75%;
+  padding-bottom:15px;
+}
+
+
+#new_post h1{
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+}
+
+/*http://www.vectormu.com/nnh-content/uploads/nice/nice-outstanding-apartment-interior-kitchen-with-living-room.jpg*/
