@@ -5,7 +5,7 @@
 
 <b> Add your comment </b>
 
-<form id='commentform' action='/posts/<%=@the_post.id%>/comments' method='post'>
+<form id='commentform' data-url="<%= commentform_url %>" action='/posts/<%=@the_post.id%>/comments' method='post'>
   <input type='text' placeholder='description' name='description'/>
 <input type='submit' value='Add!'/>
 </form>
