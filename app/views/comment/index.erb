@@ -8,6 +8,7 @@
 </form> -->
  <a id="commentlink" href="/posts/<%=@the_post.id%>/comments/new">Add a comment</a>
 
+<div id="all_comments">
   <% @the_post.comments.each do |c| %>
   <p> "<%= c.description %>"
   <div class="comment_author_detail">
@@ -15,6 +16,7 @@
   </div>
     ______________________
   </p>
+   </div>
 
 <% if session[:user_id] == c.user_id %>
 <form action="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">

@@ -159,6 +159,8 @@ a:link, a:visited{
 }*/
 
 #login_form, #signup_form{
+  /*for ajax only:*/
+  width: 30%;
   padding-left: 40px;
   line-height: 150%;
   background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
@@ -170,6 +172,24 @@ a:link, a:visited{
   height: 70%;
   padding: 40px;
   padding-bottom:15px;
+}
+
+#login_form {
+  width: 30%;
+}
+
+#signup_form {
+  width:50%;
+}
+
+
+#signit {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+        -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
 }
 
 
