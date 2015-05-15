@@ -78,7 +78,7 @@ $('#log').on('click', function(event){
     url: '/login',
   }).done(function(response){
     console.log(response)
-    $('#comments_section').append(response)
+    $('#rental-list').replaceWith(response)
   });
 });
 

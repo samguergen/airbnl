@@ -159,6 +159,8 @@ a:link, a:visited{
 }*/
 
 #login_form, #signup_form{
+  /*for ajax only:*/
+  width: 30%;
   padding-left: 40px;
   line-height: 150%;
   background: url("../mewe-faded.jpg") no-repeat 100% 100% fixed;
@@ -172,6 +174,9 @@ a:link, a:visited{
   padding-bottom:15px;
 }
 
+#login_form {
+  width: 30%;
+}
 
 .footer {
   background-color: black;
