@@ -6,6 +6,7 @@ post '/login' do
   user = User.find_by(email: params[:user][:email])
   if user.try(:authenticate, params[:user][:password])
     session[:user_id] = user.id
+    redirect "/posts"
   else
     redirect "/login"
   end
