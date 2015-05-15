@@ -43,7 +43,7 @@ post '/posts/:id/comments' do
   @new_comment = Comment.new(description: params[:description], post_id: @the_post.id, user_id: session[:user_id])
 
   if @new_comment.save!
-    redirect "_addcomment", layout: false
+    erb :"_addcomment", layout: false
     # redirect "/posts/#{@the_post.id}"
   else
     [404, "Your comment couldn't be added."]

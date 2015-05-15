@@ -26,43 +26,61 @@ $('#commentlink').on('click', function(event){
 
   //ajax post for adding new comments
 
-  $('#commentform').on('submit', function(event){
-    event.preventDefault();
+  // $('#comments_section').on('submit', '#newestcomm', function(event){
+  //   event.preventDefault();
 
-    var $form = $( this ),
+  //   var $form = $( this ),
 
-    comment = $form.find( "input[name='description']" ).val();
-    // url = $form.attr( "action" );
-    // var id = $(event.target).attr('data-id');
-    var id = $(event.target).data('url');
-    var url = '/posts/' + id + '/comments';
+  //   comment = $form.find( "input[name='description']" ).val();
+  //   // debugger;
+  //   // url = $form.attr( "action" );
+  //   // url = $(event.target).attr("action");
+  //   id = event.target.id;
+  //   console.log(id);
+  //   // var id = $(event.target).attr('data-id');
+  //   // var id = $(event.target).data('url');
+  //   var url = '/posts/' + id + '/comments';
+  //   console.log(url);
+
+  // $.ajax({
+  //     method: 'POST',
+  //     url: url,
+  //     data: {
+  //       comment_id: comment
+  //     }
+  //   }).done(function(result){
+  //     console.log("hey!");
+  //     $('#all_comments').append(result);
+  //     // $('').toggle(false);
+
+  //   });
+  // });
 
 
+  //ajax get for displaying edit criteria form
+
+  // $('#log').on('click', function(event){
+  //   event.preventDefault();
+  //   target = event.target;
+  //   $.ajax({
+  //     url: target.pathname
+  //   }).done(function(result){
+  //     $('.preflist').append(result);
+  //   });
+  //   });
+
+
+$('#log').on('click', function(event){
+  console.log(event);
+  event.preventDefault();
   $.ajax({
-      method: 'POST',
-      url: url,
-      data: {
-        comment_id: comment
-      }
-    }).done(function(result){
-      $('#all_comments').append(result);
-      // $('').toggle(false);
-
-    });
+    type: "GET",
+    url: '/login',
+  }).done(function(response){
+    console.log(response)
+    $('#comments_section').append(response)
   });
-
-
- //  //ajax get for displaying edit criteria form
-
- //  $('.edit').on('click', function(event){
- //    event.preventDefault();
- //    target = event.target;
- //    $.ajax({
- //      url: target.pathname
- //    }).done(function(result){
- //      $('.preflist').append(result);
- //    });
- //    });
+});
 
  //  // ajax edit form
 
