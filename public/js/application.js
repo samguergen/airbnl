@@ -66,8 +66,10 @@ $('#log').on('click', function(event){
     url: '/login',
   }).done(function(response){
     console.log(response)
-    $('#rental-list').replaceWith(response)
+    $('#rental-list').replaceWith(response);
+    $('#signup_form').replaceWith(response);
   });
+
 });
 
 
@@ -79,7 +81,8 @@ $('#sign').on('click', function(event){
     url: '/signup',
   }).done(function(response){
     console.log(response)
-    $('#rental-list').replaceWith(response)
+    $('#rental-list').replaceWith(response);
+    $('#login_form').replaceWith(response);
   });
 });
 
