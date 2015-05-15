@@ -25,7 +25,7 @@
   <span class="links">
 <% if session[:user_id] == nil %>
 <a id="log" href="/login">Login </a>
- <a href="/signup">Sign up </a>
+ <a id='sign' href="/signup">Sign up </a>
 <% elsif session[:user_id] %>
 <a href="/user/<%= session[:user_id] %>">My profile</a>
  <a href="/logout">Logout </a>

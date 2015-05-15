@@ -178,6 +178,21 @@ a:link, a:visited{
   width: 30%;
 }
 
+#signup_form {
+  width:50%;
+}
+
+
+#signit {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+        -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+}
+
+
 .footer {
   background-color: black;
   color: white;

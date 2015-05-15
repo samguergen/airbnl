@@ -56,19 +56,7 @@ $('#commentlink').on('click', function(event){
   //   });
   // });
 
-
-  //ajax get for displaying edit criteria form
-
-  // $('#log').on('click', function(event){
-  //   event.preventDefault();
-  //   target = event.target;
-  //   $.ajax({
-  //     url: target.pathname
-  //   }).done(function(result){
-  //     $('.preflist').append(result);
-  //   });
-  //   });
-
+// ajax for login form
 
 $('#log').on('click', function(event){
   console.log(event);
@@ -76,6 +64,19 @@ $('#log').on('click', function(event){
   $.ajax({
     type: "GET",
     url: '/login',
+  }).done(function(response){
+    console.log(response)
+    $('#rental-list').replaceWith(response)
+  });
+});
+
+
+$('#sign').on('click', function(event){
+  console.log(event);
+  event.preventDefault();
+  $.ajax({
+    type: "GET",
+    url: '/signup',
   }).done(function(response){
     console.log(response)
     $('#rental-list').replaceWith(response)

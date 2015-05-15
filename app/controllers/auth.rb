@@ -12,7 +12,7 @@ post '/login' do
 end
 
 get '/signup' do
-  erb :"auth/signup"
+  erb :"auth/signup", layout: false
 end
 
 post '/signup' do
