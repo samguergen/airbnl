@@ -56,6 +56,21 @@ $('#commentlink').on('click', function(event){
   //   });
   // });
 
+//ajax get for edit comment
+
+// $('#firsteditcomm').on('submit', function(event){
+//   event.preventDefault();
+//   console.log(this.href);
+//   $.ajax({
+//     type: "GET",
+//     // url: '/posts//comments//edit',
+//     url: this.href;
+//   }).done(function(response){
+//     console.log("the response is" + response);
+//     $('#comments_section').replaceWith(response)
+//   });
+// });
+
 // ajax for login form
 
 $('#log').on('click', function(event){

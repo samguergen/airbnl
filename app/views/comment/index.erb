@@ -19,7 +19,7 @@
    </div>
 
 <% if session[:user_id] == c.user_id %>
-<form action="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">
+<form id='firsteditcomm' action="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">
     <input type="submit" value="Edit comment">
 </form>
 <!-- <p><a href="/posts/<%=@the_post.id%>/comments/<%=c.id%>/edit">Edit my comment</a></p> -->
