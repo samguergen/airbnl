@@ -59,13 +59,14 @@ $('#commentlink').on('click', function(event){
 //ajax get for edit comment
 
 // $('#firsteditcomm').on('submit', function(event){
-//   console.log(event)
 //   event.preventDefault();
+//   console.log(this.href);
 //   $.ajax({
 //     type: "GET",
-//     url: this.href,
+//     // url: '/posts//comments//edit',
+//     url: this.href;
 //   }).done(function(response){
-//     console.log(response);
+//     console.log("the response is" + response);
 //     $('#comments_section').replaceWith(response)
 //   });
 // });

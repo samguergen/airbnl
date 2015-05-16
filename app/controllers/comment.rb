@@ -17,7 +17,7 @@ get '/posts/:id/comments/:commentid/edit' do
   @the_post = Post.find_by(id: params[:id])
   @the_comment = @the_post.comments.find_by(id: params[:commentid])
   if @the_comment.user_id == session[:user_id]
-    erb :"comment/edit"
+    return erb :"comment/edit"
 
   else
     "Sorry, you can only edit your own comments!"
