@@ -228,13 +228,21 @@ a:link, a:visited{
 }
 
 .mainbody_usershow{
-  background: url("../white-room.jpg") no-repeat 100% 100% fixed;
+  background: url("../summerhaus.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
 }
 
+
+#userinfo {
+    background: url("../summerhaus.jpg") no-repeat 100% 100% fixed;
+      background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
 
 .mainbody_usershow #userinfo{
   margin-top: 50px;

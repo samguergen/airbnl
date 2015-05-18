@@ -83,7 +83,7 @@ $('#log').on('click', function(event){
     console.log(response)
     $('#rental-list').replaceWith(response);
     $('#signup_form').replaceWith(response);
-    $('.mainbody_usershow').replaceWith(response);
+    $('#userinfo').replaceWith(response);
 
   });
 
@@ -100,7 +100,10 @@ $('#sign').on('click', function(event){
     console.log(response)
     $('#rental-list').replaceWith(response);
     $('#login_form').replaceWith(response);
-    $('.mainbody_usershow').replaceWith(response);
+    resp = $(response).css("width", "100%");
+    $('#userinfo').replaceWith(resp);
+    // $('#userinfo').replaceWith(response);
+    // $('#userinfo').addClass("mainbody_usershow");
   });
 });
 
