@@ -244,15 +244,15 @@ a:link, a:visited{
   -webkit-background-size: cover;
   padding: 40px;
   padding-bottom: 15px;
-}
-}
+}}
 
- #userinfo{
+
+/* #userinfo{
   margin-top: 50px;
   float: left;
   width: 40%;
   margin:50px;
-}
+}*/
 
 .mainbody_usershow img{
   margin-top: 50px;
@@ -262,11 +262,13 @@ a:link, a:visited{
 
  #userinfo #user_des{
   display: inline-block;
+  vertical-align:top;
   width: 30%;
 }
 
  #userinfo img{
   display: inline-block;
+  vertical-align:top;
   width: 30%;
 }
 
