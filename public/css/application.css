@@ -243,7 +243,8 @@ a:link, a:visited{
   -o-background-size: cover;
   -webkit-background-size: cover;
   padding: 40px;
-  padding-bottom: 15px;
+  height: 80%;
+/*  padding-bottom: 15px;*/
 }}
 
 
@@ -264,12 +265,15 @@ a:link, a:visited{
   display: inline-block;
   vertical-align:top;
   width: 30%;
+  margin-left: 2%;
+  margin-top: -2%;
 }
 
  #userinfo img{
   display: inline-block;
   vertical-align:top;
-  width: 30%;
+  width: 25%;
+  margin-left: 18%;
 }
 
 #new_post {

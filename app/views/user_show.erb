@@ -4,14 +4,19 @@
   <h2> <%= @the_user.first_name.titleize %> <%= @the_user.last_name.titleize %> </h2>
   <div id="user_des">
 <p><%= @the_user.age %> years old </p>
-<p> <b>Description:</b> <%= @the_user.description %> </p>
-<p> <b>Languages spoken:</b> <%= @the_user.language %> </p>
-<p> Checkout out <b><a href="<%= @the_user.facebook_url %>">their facebook</a></b></p>
+<br>
+<p>  <%= @the_user.description %> </p>
+<br>
+<ul>
+<li><p> <b>Languages spoken:</b> <%= @the_user.language %> </p></li>
+<li><p> Checkout out <b><a href="<%= @the_user.facebook_url %>">their facebook</a></b></p></li>
 
 <% @the_user.posts.each do |p| %>
-<p><a href="/posts/<%=p.id %>">View their post: <em><%=p.title %></em></a></p>
+<li><p><a href="/posts/<%=p.id %>">View their post: <em><%=p.title %></em></a></p></li>
 <% end %>
-</div><img src="<%=@the_user.photo_url %>"/>
+</div>
+</ul>
+<img src="<%=@the_user.photo_url %>"/>
 </div>
 
 
