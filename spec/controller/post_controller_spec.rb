@@ -16,6 +16,7 @@
         expect(assigns(:all_posts)).to eq Post.all
       end
 
+
       xit 'should process the GET route and redirect to index erb page' do
         get "/posts"
         # response.should be_successful
@@ -26,14 +27,30 @@
    end
 
 
-   context "GET '/posts/1'" do
-      it "returns property description" do
-        get '/post/1'
-        expect(last_response.body).to be_ok
+   context "GET '/login'" do
+      it "returns the login form" do
+        get '/login'
+        expect(last_response).to be_ok
+        expect(last_response.body).to include('Login')
       end
     end
 
 
+   context "GET '/signup'" do
+      it "returns the signup form" do
+        get '/signup'
+        expect(last_response).to be_ok
+        expect(last_response.body).to include('Create your account')
+      end
+    end
+
+   context "GET '/posts/new'" do
+      it "returns an error message if user not logged in" do
+        get '/posts/new'
+        expect(last_response).to be_ok
+        expect(last_response.body).to eq('Sorry, only AirBnL members can create new posts.')
+      end
+    end
 
     xit "#new" do
       get :new
