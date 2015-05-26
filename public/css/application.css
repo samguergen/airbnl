@@ -70,7 +70,7 @@ a:link, a:visited{
   padding: 40px;
   padding-bottom:15px;
 }
-/*source of image: http://mewe.co/wp-content/uploads/2015/04/new-nice-apartment-kitchens-with-and-kitchens-designed-for-entertaining-complement-nice-apartment.jpg*/
+/*image source: http://mewe.co/wp-content/uploads/2015/04/new-nice-apartment-kitchens-with-and-kitchens-designed-for-entertaining-complement-nice-apartment.jpg*/
 
 
 .mainbodyindex .welcome{
@@ -227,13 +227,13 @@ a:link, a:visited{
   padding-left: 70%;
 }
 
-.mainbody_usershow{
+/*.mainbody_usershow{
   background: url("../summerhaus.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-}
+}*/
 
 
 #userinfo {
@@ -242,9 +242,12 @@ a:link, a:visited{
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+  padding: 40px;
+  padding-bottom: 15px;
+}
 }
 
-.mainbody_usershow #userinfo{
+ #userinfo{
   margin-top: 50px;
   float: left;
   width: 40%;
@@ -255,6 +258,16 @@ a:link, a:visited{
   margin-top: 50px;
   float: left;
   margin: 50px;
+}
+
+ #userinfo #user_des{
+  display: inline-block;
+  width: 30%;
+}
+
+ #userinfo img{
+  display: inline-block;
+  width: 30%;
 }
 
 #new_post {
