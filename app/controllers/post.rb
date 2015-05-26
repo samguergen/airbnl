@@ -1,6 +1,6 @@
 get '/posts' do
   @all_posts = Post.all
-  erb :"post/index"
+  erb :"post/index", :layout => :index_layout
 end
 
 get '/posts/new' do
