@@ -12,7 +12,7 @@
 <li><p> Checkout out <b><a href="<%= @the_user.facebook_url %>">their facebook</a></b></p></li>
 
 <% @the_user.posts.each do |p| %>
-<li><p><a href="/posts/<%=p.id %>">View their post: <em><%=p.title %></em></a></p></li>
+<li>View their post: <a href="/posts/<%=p.id %>"> <em><%=p.title %></em> - </a></li>
 <% end %>
 </div>
 </ul>
