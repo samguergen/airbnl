@@ -3,21 +3,22 @@
 <div id="userinfo">
   <h2> <%= @the_user.first_name.titleize %> <%= @the_user.last_name.titleize %> </h2>
   <div id="user_des">
-<p><%= @the_user.age %> years old </p>
-<br>
-<p>  <%= @the_user.description %> </p>
-<br>
-<ul>
-<li><p> <b>Languages spoken:</b> <%= @the_user.language %> </p></li>
-<li><p> Checkout out <b><a href="<%= @the_user.facebook_url %>">their facebook</a></b></p></li>
+    <p><%= @the_user.age %> years old </p>
+    <br>
+    <p>  <%= @the_user.description %> </p>
+    <br>
+    <ul>
+      <li><p> <b>Languages spoken:</b> <%= @the_user.language %> </p></li>
+      <li><p> Checkout out <b><a href="<%= @the_user.facebook_url %>">their facebook</a></b></p></li>
 
-<% @the_user.posts.each do |p| %>
-<li>View their post: <a href="/posts/<%=p.id %>"> <em><%=p.title %></em> - </a></li>
-<% end %>
-</div>
-</ul>
-<img src="<%=@the_user.photo_url %>"/>
-<p><a href="/posts"> Return to posts </a></p>
+      <% @the_user.posts.each do |p| %>
+      <li>View their post: <a href="/posts/<%=p.id %>"> <em><%=p.title %></em> - </a></li>
+      <% end %>
+      </ul>
+    </div>
+
+  <img src="<%=@the_user.photo_url %>"/>
+  <p><a href="/posts"> Return to posts </a></p>
 </div>
 
 

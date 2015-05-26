@@ -1,21 +1,18 @@
 
-
-
-
 <% if session[:user_id] == @the_comment.user_id %>
 
-<h2>Edit your comment</h2>
+  <h2>Edit your comment</h2>
 
-<form id='editcomm' action='/posts/<%=@the_post.id%>/comments/<%=@the_comment.id%>' method='post'>
-  <input type="hidden" name="_method" value="put">
-  <input type='text' name='description' value=<%=@the_comment.description%>>
-<input type='submit' value='Update'/>
-</form>
+  <form id='editcomm' action='/posts/<%=@the_post.id%>/comments/<%=@the_comment.id%>' method='post'>
+    <input type="hidden" name="_method" value="put">
+    <input type='text' name='description' value=<%=@the_comment.description%>>
+  <input type='submit' value='Update'/>
+  </form>
 
 <% else %>
 
-<div class="sorry"> Sorry, you can only edit your own comments!
-</div>
+  <div class="sorry"> Sorry, you can only edit your own comments!
+  </div>
 
 <% end %>
 
