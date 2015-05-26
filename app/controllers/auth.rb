@@ -42,7 +42,7 @@ delete '/user/:id/delete' do
   @user_to_delete = User.find_by(id: params[:id])
   if @user_to_delete.id == session[:user_id]
     @user_to_delete.destroy!
-    redirect "/posts"
+    redirect "/logout"
   else
     "Sorry, you can only delete your own profile!"
   end
