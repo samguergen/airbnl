@@ -1,52 +1,51 @@
 <div class="container">
 
-<div class="mainbodyshow">
-<p><a href="/posts"> Return to posts </a></p>
+  <div class="mainbodyshow">
+  <p><a href="/posts"> Return to posts </a></p>
 
-<h1><%= @the_post.title %> </h1>
+  <h1><%= @the_post.title %> </h1>
 
-<p><img src="<%=@the_post.photo_url%>"/></p>
+  <p><img src="<%=@the_post.photo_url%>"/></p>
 
-<div id="basicpropinfo">
-Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name %> <%= @the_post.user.last_name %></a>
+  <div id="basicpropinfo">
+    Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name %> <%= @the_post.user.last_name %></a>
 
-<p>Location: <%= @the_post.location %></p>
+    <p>Location: <%= @the_post.location %></p>
 
-<p><em>Available: <%= @the_post.start_date %> to <%= @the_post.end_date %> </em></p>
+    <p><em>Available: <%= @the_post.start_date %> to <%= @the_post.end_date %> </em></p>
 
-<p>Price: $<%= @the_post.price %> per day.</p>
-</div>
+    <p>Price: $<%= @the_post.price %> per day.</p>
+  </div>
 
-<div id="propmoreinfo">
+  <div id="propmoreinfo">
 
-<p> <%= @the_post.description %> </p>
+    <p> <%= @the_post.description %> </p>
 
-<form class="pvotes" action='/posts/<%=@the_post.id%>/upvote' method='post'>
-  <input type='submit' value='Like'>
-</form>
+    <form class="pvotes" action='/posts/<%=@the_post.id%>/upvote' method='post'>
+      <input type='submit' value='Like'>
+    </form>
 
-<form class="pvotes" action='/posts/<%=@the_post.id%>/downvote' method='post'>
-  <input type='submit' value='Dislike'>
-</form>
+    <form class="pvotes" action='/posts/<%=@the_post.id%>/downvote' method='post'>
+      <input type='submit' value='Dislike'>
+    </form>
 
-<%= erb :"_postvote" %>
-
-
-<p> Interested?
-<br>Comment below, or email <%= @the_post.user.first_name %> at: <em><%= @the_post.user.email %></em> </p>
-
-<% if session[:user_id] == @the_post.user_id %>
-<p><a href="/posts/<%=@the_post.id%>/edit">Edit my post</a></p>
-<form action="/posts/<%=@the_post.id%>/delete" method="post">
-  <input type="hidden" name="_method" value="delete"/>
-  <input type="submit" value="Delete my post"/>
-</form>
-
-<% end %>
-
-<%= erb :"comment/index" %>
-</div>
+    <%= erb :"_postvote" %>
 
 
-</div>
+    <p> Interested?
+    <br>Comment below, or email <%= @the_post.user.first_name %> at: <em><%= @the_post.user.email %></em> </p>
+
+    <% if session[:user_id] == @the_post.user_id %>
+      <p><a href="/posts/<%=@the_post.id%>/edit">Edit my post</a></p>
+      <form action="/posts/<%=@the_post.id%>/delete" method="post">
+        <input type="hidden" name="_method" value="delete"/>
+        <input type="submit" value="Delete my post"/>
+      </form>
+
+    <% end %>
+
+    <%= erb :"comment/index" %>
+
+
+  </div>
 </div>

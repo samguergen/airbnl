@@ -18,7 +18,6 @@ get '/posts/:id/comments/:commentid/edit' do
   @the_comment = @the_post.comments.find_by(id: params[:commentid])
   if @the_comment.user_id == session[:user_id]
     return erb :"comment/edit"
-
   else
     "Sorry, you can only edit your own comments!"
   end
@@ -44,6 +43,7 @@ post '/posts/:id/comments' do
   @new_comment = Comment.new(description: params[:description], post_id: @the_post.id, user_id: session[:user_id])
 
   if @new_comment.save!
+    #for non-ajax calls:
     # erb :"_addcomment", layout: false
     redirect "/posts/#{@the_post.id}"
   else

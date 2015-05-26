@@ -1,36 +1,34 @@
 
 <div id="new_post">
 
-<% if session[:user_id] %>
+  <% if session[:user_id] %>
 
-<h1> Rent out your place! </h1>
+    <h1> Rent out your place! </h1>
 
+    <form action="/posts" method="post">
+      <b>Title:</b> <br>
+      <input type="text" name="title"/><br>
+      <b>Location:</b> <br>
+      <input type="text" name="location"/><br>
+      <b>Description:</b> <br>
+      <input type="text" name="description"/><br>
+      <b>Price per day:</b> <br>
+      <input type="text" name="price"/><br>
+      <b>Start date:</b> <br>
+      <input type="text" name="startdate"/><br>
+      <b>End date:</b> <br>
+      <input type="text" name="enddate"/><br>
+      <b>Photo URL:</b> <br>
+      <input type="text" name="photourl"/>
+      <center><input type="submit" value="Add my post"/></center>
+    </form>
 
+  <% else %>
 
-<form action="/posts" method="post">
-<b>Title:</b> <br>
-<input type="text" name="title"/><br>
-<b>Location:</b> <br>
-<input type="text" name="location"/><br>
-<b>Description:</b> <br>
-<input type="text" name="description"/><br>
-<b>Price per day:</b> <br>
-<input type="text" name="price"/><br>
-<b>Start date:</b> <br>
-<input type="text" name="startdate"/><br>
-<b>End date:</b> <br>
-<input type="text" name="enddate"/><br>
-<b>Photo URL:</b> <br>
-<input type="text" name="photourl"/>
-<center><input type="submit" value="Add my post"/></center>
-</form>
+    <div class="sorry"> Sorry, only members can create new posts. Please sign up at the link below:
+    <p><a href="/signup">Sign up</a></p>
+    </div>
 
-<% else %>
-
-<div class="sorry"> Sorry, only members can create new posts. Please sign up at the link below:
-<p><a href="/signup">Sign up</a></p>
-</div>
-
-<% end %>
+  <% end %>
 
 </div>

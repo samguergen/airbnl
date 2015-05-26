@@ -83,6 +83,8 @@ $('#log').on('click', function(event){
     console.log(response)
     $('#rental-list').replaceWith(response);
     $('#signup_form').replaceWith(response);
+    $('#userinfo').replaceWith(response);
+
   });
 
 });
@@ -98,6 +100,10 @@ $('#sign').on('click', function(event){
     console.log(response)
     $('#rental-list').replaceWith(response);
     $('#login_form').replaceWith(response);
+    resp = $(response).css("width", "100%");
+    $('#userinfo').replaceWith(resp);
+    // $('#userinfo').replaceWith(response);
+    // $('#userinfo').addClass("mainbody_usershow");
   });
 });
 
@@ -129,18 +135,18 @@ $('#sign').on('click', function(event){
 
  //  // ajax delete form
 
- //  $('body').on('click', '.ajax-delete', function(event){
- //    event.preventDefault();
- //    var id = $(event.target).attr('data-id');
- //    var url = '/user_preferences/' + id;
- //    $.ajax({
- //      method: 'DELETE',
- //      url: url
- //    }).done(function(result){
- //      var selector = "#crits_" + id;
- //      $(selector).remove();
- //    });
- //  });
+  $('body').on('click', '#deletecomm', function(event){
+    event.preventDefault();
+    var id = $(event.target).attr('data-id');
+    var url = '/user_preferences/' + id;
+    $.ajax({
+      method: 'DELETE',
+      url: url
+    }).done(function(result){
+      var selector = ".comm" + id;
+      $(selector).remove();
+    });
+  });
 
 
 
