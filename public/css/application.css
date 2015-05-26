@@ -12,7 +12,6 @@ html, body { height: 100%; }
   padding-top: 1%;
   padding-bottom: 5%;
   width: 100%;
-/*  background-color: #CCFFFF;*/
   background-color: black;
   margin: 0px;
 }
@@ -52,11 +51,8 @@ a:link, a:visited{
   color: rgb(0, 168, 255);
 }
 
-
-
 .mainbodyindex {
   float: left;
-/*  background-color: #ECFFFF;*/
   background: url("../mewe-co.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
@@ -110,9 +106,7 @@ a:link, a:visited{
   margin-right: 720px;
 }
 
-/*.mainbody h1, h2{
-  text-align: center;
-}*/
+
 
 .mainbodyshow {
   background: url("../white-room.jpg") no-repeat 100% 100% fixed;
@@ -120,11 +114,6 @@ a:link, a:visited{
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-/*  opacity:.80;
-  -moz-opacity:.80;
-  filter:alpha(opacity=80);*/
-/*  width: 100%;
-  height: 90%;*/
   padding: 40px;
   padding-bottom:15px;
   height: 250%;
@@ -132,7 +121,6 @@ a:link, a:visited{
 
 .mainbodyshow img{
   height: 500px;
-/*  display: inline-block;*/
   float:left;
   padding-bottom: 30px;
 }
@@ -152,12 +140,6 @@ a:link, a:visited{
 
 }
 
-/*.mainbodyshow h1 {
-  border: 1px solid black;
-  margin-right: 800px;
-  padding: 10px;
-  border-radius: 5px;
-}*/
 
 #login_form, #signup_form{
   /*for ajax only:*/
@@ -185,12 +167,12 @@ a:link, a:visited{
 
 
 #signit {
-    -webkit-column-count: 4; /* Chrome, Safari, Opera */
-    -moz-column-count: 4; /* Firefox */
-    column-count: 4;
-        -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 20px; /* Firefox */
-    column-gap: 20px;
+  -webkit-column-count: 4; /* Chrome, Safari, Opera */
+  -moz-column-count: 4; /* Firefox */
+  column-count: 4;
+      -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 20px; /* Firefox */
+  column-gap: 20px;
 }
 
 
@@ -203,7 +185,6 @@ a:link, a:visited{
   padding: 20px;
   height: 15px;
   width:100%;
-/*  position:absolute;*/
   bottom:0;
   left:0;
   position: fixed;
@@ -228,33 +209,15 @@ a:link, a:visited{
   padding-left: 70%;
 }
 
-/*.mainbody_usershow{
+#userinfo {
   background: url("../summerhaus.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-}*/
-
-
-#userinfo {
-    background: url("../summerhaus.jpg") no-repeat 100% 100% fixed;
-      background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
   padding: 40px;
   height: 80%;
-/*  padding-bottom: 15px;*/
-}}
-
-
-/* #userinfo{
-  margin-top: 50px;
-  float: left;
-  width: 40%;
-  margin:50px;
-}*/
+}
 
 .mainbody_usershow img{
   margin-top: 50px;
@@ -288,7 +251,6 @@ a:link, a:visited{
   height: 75%;
   padding-bottom:15px;
 }
-
 
 #new_post h1{
   text-align: center;
