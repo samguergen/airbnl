@@ -125,7 +125,7 @@ a:link, a:visited{
   padding-bottom: 30px;
 }
 
-.mainbodyshow #basicpropinfo{
+.mainbodyshow #basicpropinfo, #userinfo #user_des{
   border: .5px solid black;
   font-size: 15px;
   margin-left: 80px;
@@ -219,25 +219,41 @@ a:link, a:visited{
   height: 80%;
 }
 
-.mainbody_usershow img{
-  margin-top: 50px;
-  float: left;
-  margin: 50px;
-}
+#userinfo #user_realdes{
 
- #userinfo #user_des{
-  display: inline-block;
-  vertical-align:top;
+  font-size: 15px;
+  margin-left: 80px;
+  float:left;
+  padding: 10px;
+  border-radius: 3px;
   width: 30%;
-  margin-left: 7%;
+  margin-left: 10%;
+  line-height: 160%;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 2%;
 }
 
- #userinfo img{
+#userinfo img{
   display: inline-block;
-  vertical-align:top;
-  width: 25%;
-  margin-left: 13%;
+  height: 300px;
+  float:left;
+  padding-bottom: 30px;
+  margin-left: 10%;
+  margin-top: 2%;
 }
+
+#userinfo #user_des{
+  display: inline-block;
+  width: 30%;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+#userinfo #user_xtrades{
+  clear:both;
+}
+
 
 #new_post {
   line-height: 30px;
