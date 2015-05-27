@@ -46,26 +46,27 @@ get '/user/:id/edit' do
   end
 end
 
-# put '/posts/:id' do
-#   @the_post = Post.find_by(id: params[:id])
-#   if @the_post
-#     @the_post.title = params[:title]
-#     @the_post.description = params[:description]
-#     @the_post.location = params[:location]
-#     @the_post.price = params[:price]
-#     @the_post.start_date = params[:startdate]
-#     @the_post.end_date = params[:enddate]
-#     @the_post.photo_url = params[:photourl]
+put '/user/:id' do
+  @the_user = User.find_by(id: params[:id])
+  if @the_user
+    @the_user.update_attributes(params[:user])
+    # @the_user.first_name = params[:title]
+    # @the_user.description = params[:description]
+    # @the_user.location = params[:location]
+    # @the_user.price = params[:price]
+    # @the_user.start_date = params[:startdate]
+    # @the_user.end_date = params[:enddate]
+    # @the_user.photo_url = params[:photourl]
 
-#     if @the_post.save!
-#       redirect "/posts/#{@the_post.id}"
-#     else
-#       [500,"There is a problem with the information you are updating."]
-#     end
-#   else
-#     [404, "This post couldn't be updated."]
-#   end
-# end
+    if @the_user.save!
+      redirect "/user/#{@the_user.id}"
+    else
+      [500,"There is a problem with the information you are updating."]
+    end
+  else
+    [404, "This profile couldn't be updated."]
+  end
+end
 
 
 
