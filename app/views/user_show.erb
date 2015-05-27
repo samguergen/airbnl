@@ -1,11 +1,13 @@
 
 
 <div id="userinfo">
+  <p><a href="/posts"> Return to posts </a></p>
+
   <h2> <%= @the_user.first_name.titleize %> <%= @the_user.last_name.titleize %> </h2>
+    <p><b><%= @the_user.age %> years old </b></p>
+ <img src="<%=@the_user.photo_url %>"/>
+
   <div id="user_des">
-    <p><%= @the_user.age %> years old </p>
-    <br>
-    <p>  <%= @the_user.description %> </p>
     <br>
     <ul>
       <li><p> <b>Languages spoken:</b> <%= @the_user.language %> </p></li>
@@ -17,8 +19,26 @@
       </ul>
     </div>
 
-  <img src="<%=@the_user.photo_url %>"/>
-  <p><a href="/posts"> Return to posts </a></p>
+    <div id="user_realdes">
+        <p>  " <%= @the_user.description %>  "</p>
+    </div>
+
+<div id="user_xtrades">
+
+      <% if session[:user_id] == @the_user.id %>
+      <form action="/user/<%=@the_user.id%>/edit">
+        <input type="submit" value="Edit my profile"/>
+      </form>
+      <br>
+      <form action="/user/<%=@the_user.id%>/delete" method="post">
+        <input type="hidden" name="_method" value="delete"/>
+        <input type="submit" value="Delete my profile"/>
+      </form>
+
+    <% end %>
+
+  </div>
+
 </div>
 
 
