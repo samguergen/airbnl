@@ -6,16 +6,16 @@
 
   <form action='/user/<%=@the_user.id%>' method='post'>
     <input type='hidden' name='_method' value='put'/>
-    <input type='text' name='first_name' value='<%=@@the_user.first_name%>'/><br>
-    <input type='text' name='last_name' value='<%=@@the_user.last_name%>'/><br>
-    <input type='text' name='age' value='<%=@@the_user.age%>'/><br>
-    <input type="text" name="email" value='<%=@@the_user.email%>'/><br>
-    <input type="password" name="password" value='<%=@@the_user.password%>'/><br>
-    <input type="password" name="password_confirmation" value='<%=@@the_user.password_confirmation%>'/><br>
-    <input type="text" name="language" value='<%=@@the_user.language%>'/><br>
-    <input type='text' name='description' value='<%=@@the_user.description%>'/><br>
-    <input type="text" name="photo_url" value='<%=@@the_user.photo_url%>'/><br>
-    <input type="text" name="facebook_url" value='<%=@@the_user.facebook_url%>'/><br>
+    <input type='text' name='user[first_name]' value='<%=@the_user.first_name%>'/><br>
+    <input type='text' name='user[last_name]' value='<%=@the_user.last_name%>'/><br>
+    <input type='text' name='user[age]' value='<%=@the_user.age%>'/><br>
+    <input type="text" name="user[email]" value='<%=@the_user.email%>'/><br>
+    <input type="password" name="user[password]" value='<%=@the_user.password%>'/><br>
+    <input type="password" name="user[password_confirmation]" value='<%=@the_user.password_confirmation%>'/><br>
+    <input type="text" name="user[language]" value='<%=@the_user.language%>'/><br>
+    <input type='text' name='user[description]' value='<%=@the_user.description%>'/><br>
+    <input type="text" name="user[photo_url]" value='<%=@the_user.photo_url%>'/><br>
+    <input type="text" name="user[facebook_url]" value='<%=@the_user.facebook_url%>'/><br>
     <input type='submit' value='Update'/>
   </form>
 
