@@ -20,7 +20,10 @@
   <img src="<%=@the_user.photo_url %>"/>
 
       <% if session[:user_id] == @the_user.id %>
-      <p><a href="/user/<%=@the_user.id%>/edit">Edit my profile</a></p>
+      <form action="/user/<%=@the_user.id%>/edit">
+        <input type="submit" value="Edit my profile"/>
+      </form>
+<!--       <p><a href="/user/<%=@the_user.id%>/edit">Edit my profile</a></p> -->
       <form action="/user/<%=@the_user.id%>/delete" method="post">
         <input type="hidden" name="_method" value="delete"/>
         <input type="submit" value="Delete my profile"/>
