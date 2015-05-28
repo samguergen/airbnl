@@ -18,22 +18,14 @@ html, body { height: 100%; }
 
 .header #logo{
   float: left;
-  width: 5%;
+  width: 12%;
   vertical-align: middle;
   padding-left: 5%;
 }
 
-.header #bizname{
-  color: rgb(0, 168, 255);
-  margin-left: 10%;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
-}
-
 .header .links{
-  padding-left: 65%;
-  padding-bottom: 20px;
+  padding-left: 55%;
+  padding-top: 1%;
   float: left;
 }
 
@@ -64,7 +56,7 @@ a:link, a:visited{
   width: 100%;
   height: 90%;
   padding: 40px;
-  padding-bottom:15px;
+  padding-bottom:30px;
 }
 /*image source: http://mewe.co/wp-content/uploads/2015/04/new-nice-apartment-kitchens-with-and-kitchens-designed-for-entertaining-complement-nice-apartment.jpg*/
 
@@ -106,8 +98,6 @@ a:link, a:visited{
   margin-right: 720px;
 }
 
-
-
 .mainbodyshow {
   background: url("../white-room.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
@@ -137,9 +127,7 @@ a:link, a:visited{
 
 .mainbodyshow #propmoreinfo{
   clear: both;
-
 }
-
 
 #login_form, #signup_form{
   /*for ajax only:*/
@@ -165,7 +153,6 @@ a:link, a:visited{
   width:50%;
 }
 
-
 #signit {
   -webkit-column-count: 4; /* Chrome, Safari, Opera */
   -moz-column-count: 4; /* Firefox */
@@ -174,7 +161,6 @@ a:link, a:visited{
   -moz-column-gap: 20px; /* Firefox */
   column-gap: 20px;
 }
-
 
 .footer {
   background-color: black;
@@ -261,7 +247,6 @@ a:link, a:visited{
   clear:both;
 }
 
-
 #new_post {
   line-height: 30px;
   margin: 0px;
@@ -281,4 +266,4 @@ a:link, a:visited{
   padding: 20px;
 }
 
-/*http://www.vectormu.com/nnh-content/uploads/nice/nice-outstanding-apartment-interior-kitchen-with-living-room.jpg*/
+/*image source: http://www.vectormu.com/nnh-content/uploads/nice/nice-outstanding-apartment-interior-kitchen-with-living-room.jpg*/
