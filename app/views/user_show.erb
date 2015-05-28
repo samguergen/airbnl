@@ -1,7 +1,7 @@
 
 
 <div id="userinfo">
-  <p><a href="/posts"> Return to posts </a></p>
+
 
   <h2> <%= @the_user.first_name.titleize %> <%= @the_user.last_name.titleize %> </h2>
     <p><b><%= @the_user.age %> years old </b></p>
@@ -9,14 +9,12 @@
 
   <div id="user_des">
     <br>
-    <ul>
-      <li><p> <b>Languages spoken:</b> <%= @the_user.language %> </p></li>
-      <li><p> Checkout out <b><a href="<%= @the_user.facebook_url %>">their facebook</a></b></p></li>
+      <p><em>Languages spoken:</em> <%= @the_user.language %> </p>
+      <p><em>Social Media:</em> Checkout out <a href="<%= @the_user.facebook_url %>">their facebook</a></p>
 
       <% @the_user.posts.each do |p| %>
-      <li>View their post: <a href="/posts/<%=p.id %>"> <em><%=p.title %></em> - </a></li>
+      <em>View their post:</em> <a href="/posts/<%=p.id %>"> <%=p.title %>- </a>
       <% end %>
-      </ul>
     </div>
 
     <div id="user_realdes">
@@ -36,6 +34,8 @@
       </form>
 
     <% end %>
+
+      <br><a href="/posts"> Return to posts </a>
 
   </div>
 
