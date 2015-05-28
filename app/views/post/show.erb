@@ -15,11 +15,15 @@
     <p><em>Available:</em> <%= @the_post.start_date %> to <%= @the_post.end_date %> </p>
 
     <p><em>Price:</em> $<%= @the_post.price %> per day.</p>
+
+<div id="basicpropinfo2">
+ <p><b> <%= @the_post.description %> </b></p>
+  </div>
   </div>
 
   <div id="propmoreinfo">
 
-    <p><b> <%= @the_post.description %> </b></p>
+   <!--  <p><b> <%= @the_post.description %> </b></p> -->
 
     <form class="pvotes" action='/posts/<%=@the_post.id%>/upvote' method='post'>
       <input type='submit' value='Like'>
