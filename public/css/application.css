@@ -109,10 +109,15 @@ a:link, a:visited{
   height: 250%;
 }
 
+.mainbodyshow h1 {
+  margin-left: 4%;
+}
+
 .mainbodyshow img{
   height: 400px;
   float:left;
   padding-bottom: 30px;
+  margin-left: 4%;
 }
 
 .mainbodyshow #basicpropinfo{
@@ -127,6 +132,7 @@ a:link, a:visited{
 
 .mainbodyshow #propmoreinfo{
   clear: both;
+  margin-left: 4%;
 }
 
 #login_form, #signup_form{
