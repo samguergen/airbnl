@@ -8,18 +8,22 @@
   <p><img src="<%=@the_post.photo_url%>"/></p>
 
   <div id="basicpropinfo">
-    Created by: <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name %> <%= @the_post.user.last_name %></a>
+    <em>Created by:</em> <a href="/user/<%=@the_post.user_id%>"><%= @the_post.user.first_name %> <%= @the_post.user.last_name %></a>
 
-    <p>Location: <%= @the_post.location %></p>
+    <p><em>Location:</em> <%= @the_post.location %></p>
 
-    <p><em>Available: <%= @the_post.start_date %> to <%= @the_post.end_date %> </em></p>
+    <p><em>Available:</em> <%= @the_post.start_date %> to <%= @the_post.end_date %> </p>
 
-    <p>Price: $<%= @the_post.price %> per day.</p>
+    <p><em>Price:</em> $<%= @the_post.price %> per day.</p>
+
+<div id="basicpropinfo2">
+ <p><b> <%= @the_post.description %> </b></p>
+  </div>
   </div>
 
   <div id="propmoreinfo">
 
-    <p> <%= @the_post.description %> </p>
+   <!--  <p><b> <%= @the_post.description %> </b></p> -->
 
     <form class="pvotes" action='/posts/<%=@the_post.id%>/upvote' method='post'>
       <input type='submit' value='Like'>

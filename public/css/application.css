@@ -11,29 +11,21 @@ html, body { height: 100%; }
   display: absolute;
   padding-top: 1%;
   padding-bottom: 5%;
-  width: 100%;
+  width: 106%;
   background-color: black;
   margin: 0px;
 }
 
-.header #logo{
+.header #logo, #logo2{
   float: left;
-  width: 5%;
+  width: 12%;
   vertical-align: middle;
   padding-left: 5%;
 }
 
-.header #bizname{
-  color: rgb(0, 168, 255);
-  margin-left: 10%;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
-}
-
 .header .links{
-  padding-left: 65%;
-  padding-bottom: 20px;
+  padding-left: 55%;
+  padding-top: 1%;
   float: left;
 }
 
@@ -64,7 +56,7 @@ a:link, a:visited{
   width: 100%;
   height: 90%;
   padding: 40px;
-  padding-bottom:15px;
+  padding-bottom:30px;
 }
 /*image source: http://mewe.co/wp-content/uploads/2015/04/new-nice-apartment-kitchens-with-and-kitchens-designed-for-entertaining-complement-nice-apartment.jpg*/
 
@@ -106,8 +98,6 @@ a:link, a:visited{
   margin-right: 720px;
 }
 
-
-
 .mainbodyshow {
   background: url("../white-room.jpg") no-repeat 100% 100% fixed;
   background-size: cover;
@@ -119,27 +109,39 @@ a:link, a:visited{
   height: 250%;
 }
 
+.mainbodyshow h1 {
+  margin-left: 4%;
+}
+
 .mainbodyshow img{
   height: 400px;
   float:left;
   padding-bottom: 30px;
+  margin-left: 4%;
 }
 
 .mainbodyshow #basicpropinfo{
-  border: .5px solid black;
   font-size: 15px;
   margin-left: 80px;
   float:left;
-  border: 1px solid;
-  padding: 10px;
+/*  border: 1px solid;*/
+  padding: 20px;
   border-radius: 3px;
+}
+
+
+ .mainbodyshow #basicpropinfo #basicpropinfo2{
+  margin-top: 20px;
+  float: left;
+  font-size: 17px;
+  padding: 10px;
+  width: 80%;
 }
 
 .mainbodyshow #propmoreinfo{
   clear: both;
-
+  margin-left: 4%;
 }
-
 
 #login_form, #signup_form{
   /*for ajax only:*/
@@ -165,7 +167,6 @@ a:link, a:visited{
   width:50%;
 }
 
-
 #signit {
   -webkit-column-count: 4; /* Chrome, Safari, Opera */
   -moz-column-count: 4; /* Firefox */
@@ -173,22 +174,6 @@ a:link, a:visited{
       -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
   -moz-column-gap: 20px; /* Firefox */
   column-gap: 20px;
-}
-
-
-.footer {
-  background-color: black;
-  color: white;
-  font-size: 10px;
-  font-style: italic;
-  clear: both;
-  padding: 20px;
-  height: 15px;
-  width:100%;
-  bottom:0;
-  left:0;
-  position: fixed;
-  bottom: 0;
 }
 
 #comments_section {
@@ -215,8 +200,9 @@ a:link, a:visited{
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  padding: 20px;
   height: 100%;
+  padding: 40px;
+  padding-left: 75px;
 }
 
 #userinfo #user_realdes{
@@ -226,7 +212,7 @@ a:link, a:visited{
   float:left;
   padding: 10px;
   border-radius: 3px;
-  width: 30%;
+  width: 40%;
   margin-left: 8%;
   line-height: 160%;
   font-style: italic;
@@ -239,20 +225,19 @@ a:link, a:visited{
   height: 350px;
   float:left;
   padding-bottom: 30px;
-  margin-left: 10%;
   margin-top: 2%;
 }
 
 #userinfo #user_des{
   display: inline-block;
-  width: 30%;
+  width: 40%;
   margin-top: 2%;
   margin-left: 10%;
   border: .5px solid black;
-  font-size: 13px;
+  font-size: 15px;
   margin-left: 100px;
   float:left;
-  border: 1px solid;
+/*  border: 1px solid;*/
   padding: 5px;
   border-radius: 3px;
 }
@@ -260,7 +245,6 @@ a:link, a:visited{
 #userinfo #user_xtrades{
   clear:both;
 }
-
 
 #new_post {
   line-height: 30px;
@@ -281,4 +265,20 @@ a:link, a:visited{
   padding: 20px;
 }
 
-/*http://www.vectormu.com/nnh-content/uploads/nice/nice-outstanding-apartment-interior-kitchen-with-living-room.jpg*/
+/*image source: http://www.vectormu.com/nnh-content/uploads/nice/nice-outstanding-apartment-interior-kitchen-with-living-room.jpg*/
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  clear: both;
+  padding: 20px;
+  height: 15px;
+  width:100%;
+  bottom:0;
+  left:0;
+  position: fixed;
+  padding-left: 83%;
+  font-weight: bold;
+}
