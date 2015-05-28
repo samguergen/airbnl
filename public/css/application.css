@@ -162,21 +162,6 @@ a:link, a:visited{
   column-gap: 20px;
 }
 
-.footer {
-  background-color: black;
-  color: white;
-  font-size: 10px;
-  font-style: italic;
-  clear: both;
-  padding: 20px;
-  height: 15px;
-  width:100%;
-  bottom:0;
-  left:0;
-  position: fixed;
-  bottom: 0;
-}
-
 #comments_section {
   background-color: #F1FAEF;
   text-align: left;
@@ -267,3 +252,19 @@ a:link, a:visited{
 }
 
 /*image source: http://www.vectormu.com/nnh-content/uploads/nice/nice-outstanding-apartment-interior-kitchen-with-living-room.jpg*/
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  font-style: italic;
+  clear: both;
+  padding: 20px;
+  height: 15px;
+  width:100%;
+  bottom:0;
+  left:0;
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+}
