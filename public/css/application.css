@@ -11,7 +11,7 @@ html, body { height: 100%; }
   display: absolute;
   padding-top: 1%;
   padding-bottom: 5%;
-  width: 100%;
+  width: 106%;
   background-color: black;
   margin: 0px;
 }
@@ -257,7 +257,7 @@ a:link, a:visited{
   background-color: black;
   color: white;
   font-size: 10px;
-  font-style: italic;
+  font-weight: bold;
   clear: both;
   padding: 20px;
   height: 15px;
@@ -265,6 +265,6 @@ a:link, a:visited{
   bottom:0;
   left:0;
   position: fixed;
-  bottom: 0;
-  text-align: right;
+  padding-left: 83%;
+  font-weight: bold;
 }
